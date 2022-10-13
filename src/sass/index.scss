@@ -1,2 +1,65 @@
-@import './common';
-@import './example';
+// base
+@import './base/base';
+@import './base/container';
+@import './base/resets';
+
+// utils
+@import './utils/common';
+@import './utils/vars';
+
+// header
+@import './header/header';
+
+// hero
+@import './hero/hero';
+
+// Products
+@import './products/products';
+
+// About
+@import './about/about';
+
+// Advantages
+@import './advantages/advantages';
+
+// Gallery
+@import './gallery/gallery';
+
+// Customer Reviews
+@import './customer-reviews/customer-reviews';
+
+// Contacts
+@import './contacts/contacts';
+
+// Footer
+@import './footer/footer';
+
+// modals
+@import './modals/buy-now';
+@import './modals/products-modal';
+@import './modals/read-more';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
