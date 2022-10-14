@@ -1,0 +1,20 @@
+@import './functions';
+
+@mixin font-pars($weight: false, $size: false, $lh: false, $ls: false) {
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    @if $size {
+      line-height: decimal-round(calc($lh / $size), 2);
+    } @else {
+      line-height: $lh;
+    }
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
