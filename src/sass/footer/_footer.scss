@@ -1,0 +1,34 @@
+@import './functions';
+
+@mixin font-pars($weight: false, $size: false, $lh: false, $ls: false) {
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    @if $size {
+      line-height: decimal-round(calc($lh / $size), 2);
+    } @else {
+      line-height: $lh;
+    }
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+.footer__container {
+  padding-top: 39px;
+  padding-bottom: 62px;
+  background-color: var(--primary-bg-color);
+}
+
+.footer__uptitle {
+  @include font-pars(700, 18px, 22px);
+
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+}
