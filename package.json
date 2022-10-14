@@ -5,7 +5,7 @@
   "homepage": "https://Hellblazer98.github.io/team-project-1-kcu",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /team-project-1-kcu/"
   },
   "repository": {
     "type": "git",
