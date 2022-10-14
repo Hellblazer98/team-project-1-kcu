@@ -14,13 +14,14 @@ img {
     height: auto;
 }
 
-.list {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.link {
+a {
     text-decoration: none;
     color: currentColor;
+    cursor: url(../images/Cursor.png), pointer;
 }
