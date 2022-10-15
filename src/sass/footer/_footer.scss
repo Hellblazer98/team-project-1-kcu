@@ -1,7 +1,33 @@
+/* Breakpoints:
+  
+  // MOBILE
+  @media screen and (max-width: 767.9px) {
+  }
+  
+  // TABLET
+  @media screen and (min-width: 768px) {
+  }
+  
+  // DESKTOP
+  @media screen and (min-width: 1200px) {
+  }
+*/
+
 .footer__container {
   padding-top: 39px;
   padding-bottom: 62px;
-  background-color: var(--primary-bg-color);
+
+  // TABLET
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 13px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 11px;
+  }
 }
 
 .footer__uptitle {
