@@ -1,3 +1,91 @@
-.products {
-  color: black;
+.container {
+  padding: 60px 20px;
+  min-width: 320px;
+}
+.products__upper-title {
+  @include font-pars($weight: 800, $size: 18px, $lh: 22px, $ls: 0.04em);
+  color: var(--secondary-text-color);
+  margin-bottom: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.products__title {
+  font-family: 'Seymour One';
+  @include font-pars($weight: 400, $size: 30px, $lh: 38px, $ls: 0.04em);
+  color: var(--secondary-text-color);
+  margin-bottom: 148px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.products__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products__item {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  height: 420px;
+  position: relative;
+  border-radius: 24px;
+  &:nth-child(1) {
+    background-color: var(--ice-cream);
+    margin-bottom: 164px;
+  }
+  &:nth-child(2) {
+    background-color: var(--ice-coffee);
+    margin-bottom: 164px;
+  }
+  &:nth-child(3) {
+    background-color: var(--milkshakes);
+  }
+  &--container {
+    display: block;
+  }
+}
+.products__img {
+  position: absolute;
+  top: 0;
+  left: calc(100% / 7);
+  transform: translateY(-50%);
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
+}
+.products__under-title {
+  @include font-pars($weight: 700, $size: 20px, $lh: 24px, $ls: 0.04em);
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 123px;
+  padding: 123px 53px 40px;
+}
+.products__text {
+  @include font-pars($weight: 700, $size: 14px, $lh: 25px, $ls: 0.04em);
+  text-align: center;
+  color: var(--secondary-text-color);
+  max-width: 280px;
+  padding: 0 40px;
+  margin: 0 auto auto;
+}
+.products__btn {
+  display: block;
+  background-color: transparent;
+  border-color: transparent;
+}
+.products__icon {
+  fill: var(--secondary-text-color);
 }
