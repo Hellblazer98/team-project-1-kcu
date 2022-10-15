@@ -1,0 +1,118 @@
+.section_advantages {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list_advantages {
+  margin: 0 auto;
+  width: 230px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 80;
+    width: 768px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32;
+    width: 1200px;
+  }
+}
+
+.advantages_number {
+  margin-bottom: 18px;
+  padding-top: 25px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42px / 36px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(59px / 48px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: calc(71px / 58px);
+  }
+}
+
+.advantages_cow::before {
+  content: '';
+  display: block;
+  background-color: var(--yellow-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -18px;
+  left: 39%;
+}
+
+.advantages_weight::before {
+  content: '';
+  display: block;
+  background-color: var(--yellow-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -18px;
+  left: 39%;
+}
+
+.advantages_icecream::before {
+  content: '';
+  display: block;
+  background-color: var(--yellow-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -18px;
+  left: 39%;
+}
+
+.advantages_desc {
+  font-size: 12px;
+  line-height: calc(20px / 12px);
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24px / 14px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(28px / 16px);
+    letter-spacing: 0.02em;
+  }
+}
+
+.advantages_item {
+  width: 230px;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+  }
+}
+
+.advantages_item:not(last-child) {
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
