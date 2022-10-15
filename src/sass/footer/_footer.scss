@@ -32,8 +32,6 @@
 
 .footer__uptitle {
   @include font-pars(700, 18px, 22px);
-
   text-transform: uppercase;
-
   color: var(--primary-text-color);
 }
