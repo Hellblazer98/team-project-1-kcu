@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // Read more modal
 .read-more {
 width: 280px;
@@ -7,6 +8,11 @@ width: 280px;
 .read-more__modal {
 padding-left: 10%;
 padding-right: 10%;
+=======
+// Read-more
+// Modal
+.modal__div {
+>>>>>>> Stashed changes
 position: relative;
 background: #FCFCFC;
 border: 2px solid #F8D24E;
@@ -14,7 +20,11 @@ border-radius: 10px;
 }
 
 // button
+<<<<<<< Updated upstream
 .read-more-button {
+=======
+.modal-button {
+>>>>>>> Stashed changes
 cursor: pointer;
 transition-property: fill;
 transition-duration: 250ms;
@@ -30,7 +40,11 @@ fill: #131313;
 
 
 // h2 text
+<<<<<<< Updated upstream
 .read-more__h2{
+=======
+.modal__h2{
+>>>>>>> Stashed changes
 font-family: 'Seymour One';
 font-style: normal;
 font-weight: 400;
@@ -40,6 +54,11 @@ text-align: center;
 color: #131313;
 margin-bottom: 20px;
 padding-top: 10%;
+<<<<<<< Updated upstream
+=======
+padding-left: 10%;
+padding-right: 10%;
+>>>>>>> Stashed changes
 }
 
 // video
@@ -48,12 +67,34 @@ display: block;
 left: 50%;
 transform:translateX(-50%);
 margin-bottom: 20px;
+<<<<<<< Updated upstream
 width: 224px;
 height: 199px;
 background: black url('/src/images/play_button.png') center;
 background-repeat: no-repeat;
 border-radius: 10px;
 position: relative;
+=======
+width: 80%;
+height: 200px;
+background: black;
+background-repeat: no-repeat;
+border-radius: 10px;
+position: relative;
+fill: #FCFCFC;
+
+&.ready .read-more--play_button  {
+fill: transparent;
+}
+}
+
+// play button
+.read-more--play_button {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translateY(-50%);
+>>>>>>> Stashed changes
 }
 
 // iframe
@@ -68,8 +109,13 @@ height: 100%;
 }
 
 // text
+<<<<<<< Updated upstream
 .read-more__p {
 text-align: center;
+=======
+.modal__p {
+text-align: left;
+>>>>>>> Stashed changes
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
@@ -77,4 +123,9 @@ font-size: 14px;
 line-height: 1.4;
 color: #131313;
 padding-bottom: 28px;
+<<<<<<< Updated upstream
+=======
+padding-left: 10%;
+padding-right: 10%;
+>>>>>>> Stashed changes
 }

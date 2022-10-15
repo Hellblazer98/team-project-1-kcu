@@ -1,0 +1,31 @@
+// Location
+// map photo
+.location-modal__div {
+display: block;
+left: 50%;
+transform:translateX(-50%);
+margin-bottom: 20px;
+width: 224px;
+height: 199px;
+background: url('/src/images/location-modal.jpg');
+border-radius: 10px;
+position: relative;
+}
+
+ // map button padding
+.location-modal_button--div {
+display: flex;
+justify-content: center;
+padding-bottom: 10%;
+}      
+
+// map button
+.location-modal_button {
+width: 134px;
+height: 42px;
+background: #F8D24E;
+border: 0;
+border-radius: 10px;
+}
+
+
