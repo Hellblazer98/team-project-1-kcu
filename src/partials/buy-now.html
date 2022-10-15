@@ -1,0 +1,57 @@
+<div class="buy-now__backdrop is-hidden" data-modal>
+  <div class="buy-now__modal">
+    <button class="buy-now__btn" type="button" data-modal-close>
+      <svg class="buy-now__btn-icon" width="16" height="16">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <strong class="buy-now__title">Buy now</strong>
+    <div class="buy-now__card-set">
+      <ul class="buy-now__list list">
+        <li class="buy-now__item">
+          <!-- <img src="" alt="" /> -->
+          <h2 class="buy-now__card-name">ice cream</h2>
+        </li>
+        <li class="buy-now__item">
+          <h2 class="buy-now__card-name">ice coffee</h2>
+        </li>
+        <li class="buy-now__item">
+          <h2 class="buy-now__card-name">milkshake</h2>
+        </li>
+      </ul>
+    </div>
+    <form class="form-order">
+      <div class="form-order__group" role="group">
+        <label class="form-order__field">
+          <span class="form-order__label"></span>
+          <input
+            class="form-order__input"
+            type="text"
+            name="name"
+            placeholder="Name"
+            autofocus
+          />
+        </label>
+        <label class="form-order__field">
+          <span class="form-order__label"></span>
+          <input
+            class="form-order__input"
+            type="tel"
+            name="tel"
+            placeholder="Phone"
+          />
+        </label>
+        <label class="form-order__comment">
+          <span class="form-order__label"></span>
+          <textarea
+            class="form-order__textarea"
+            name="Comment"
+            rows="3"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button class="form-order__btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

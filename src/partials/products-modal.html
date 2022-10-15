@@ -1,0 +1,76 @@
+<div class="products-modal__backdrop is-hidden" data-modal>
+  <div class="products-modal__modal">
+    <button class="products-modal__btn" type="button" data-modal-close>
+      <svg class="products-modal__btn-icon" width="16" height="16">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <strong class="products-modal__title">Chololate icecream</strong>
+
+    <h2 class="products-modal__title-ingredients">Ingredients</h2>
+    <div class="products-modal__ingredients-box">
+      <ul class="products-modal__ingredients-list list">
+        <li class="products-modal__ingredients-item">
+          <span class="products-modal__ingredients-name">Milk</span>
+          <span>100ml</span>
+        </li>
+        <li class="products-modal__ingredients-item">
+          <span class="products-modal__ingredients-name"
+            >Belgian chocolate</span
+          >
+          <span>20g</span>
+        </li>
+        <li class="products-modal__ingredients-item">
+          <span class="products-modal__ingredients-name">Cream</span>
+          <span>150 ml</span>
+        </li>
+        <li class="products-modal__ingredients-item">
+          <span class="products-modal__ingredients-name">Cocoa powder</span>
+          <span> 30g</span>
+        </li>
+        <li class="products-modal__ingredients-item">
+          <span class="products-modal__ingredients-name">Sugar</span>
+          <span>40g</span>
+        </li>
+        <li class="products-modal__ingredients-item">
+          <span class="products-modal__ingredients-name">Vanilla sugar</span>
+          <span>10g</span>
+        </li>
+      </ul>
+    </div>
+
+    <form class="form-order">
+      <div class="form-order__group" role="group">
+        <label class="form-order__field">
+          <span class="form-order__label"></span>
+          <input
+            class="form-order__input"
+            type="text"
+            name="name"
+            placeholder="Name"
+            autofocus
+          />
+        </label>
+        <label class="form-order__field">
+          <span class="form-order__label"></span>
+          <input
+            class="form-order__input"
+            type="tel"
+            name="tel"
+            placeholder="Phone"
+          />
+        </label>
+        <label class="form-order__comment">
+          <span class="form-order__label"></span>
+          <textarea
+            class="form-order__textarea"
+            name="Comment"
+            rows="3"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button class="form-order__btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
