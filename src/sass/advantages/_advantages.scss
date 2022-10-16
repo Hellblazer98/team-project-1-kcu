@@ -1,6 +1,15 @@
 .section__advantages {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 60px;
+  background-color: var(--primary-bg-color);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 204px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 180px;
+  }
 }
 
 .list__advantages {
@@ -9,14 +18,10 @@
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 80;
-    width: 768px;
-    align-items: center;
-    justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
     gap: 32;
-    width: 1200px;
   }
 }
 
@@ -41,9 +46,10 @@
   }
 }
 
-.advantages__cow::before {
-  content: '';
-  display: block;
+.advantages__number::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--yellow-color);
   width: 50px;
   height: 50px;
@@ -51,30 +57,27 @@
   position: relative;
   top: -18px;
   left: 39%;
+
+  @media screen and (min-width: 768px) {
+    left: 33%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 42%;
+  }
+}
+
+.advantages__cow::before {
+  content: url(../images/advantages/example-cow.png); //This is example, wait for imges from Bohdan
+  background-position: center;
 }
 
 .advantages__weight::before {
-  content: '';
-  display: block;
-  background-color: var(--yellow-color);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: relative;
-  top: -18px;
-  left: 39%;
+  content: url(../images/advantages/example-cow.png); //This is example, wait for imges from Bohdan
 }
 
 .advantages__icecream::before {
-  content: '';
-  display: block;
-  background-color: var(--yellow-color);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: relative;
-  top: -18px;
-  left: 39%;
+  content: url(../images/advantages/example-cow.png); //This is example, wait for imges from Bohdan
 }
 
 .advantages__desc {
