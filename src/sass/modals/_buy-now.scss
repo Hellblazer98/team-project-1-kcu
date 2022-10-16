@@ -62,25 +62,26 @@
 }
 .buy-now__card-set {
   display: flex;
+
   justify-content: center;
 }
 .buy-now__list {
-  display: inline-block;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 32px;
     justify-content: space-between;
+    flex-direction: row;
   }
 }
 
-// .buy-now__item {
-//   &:hover,
-//   &:focus {
-//     background-color: #d6936d;
-//   }
-// }
+.buy-now__item {
+  justify-content: center;
+}
+
 .buy-now__card-name {
   position: relative;
   font-weight: 700;
@@ -90,10 +91,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   width: 132px;
+  height: 136px;
 
   color: #131313;
 
-  &::before {
+  &::after {
     content: '';
     display: block;
 
