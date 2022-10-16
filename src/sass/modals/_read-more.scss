@@ -5,6 +5,12 @@
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
+    width: 280px;
+    @media  (min-width: 768px) {
+    width: 568px;  
+    left: 50%;
+    transform: translateX(-50%);
+    }
     }
     
     // button
