@@ -1,13 +1,19 @@
+// utils
+@import './utils/common';
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
 // base
 @import './base/base';
 @import './base/container';
 @import './base/resets';
 
 // utils
-@import './utils/mixins';
 @import './utils/common';
 @import './utils/vars';
 @import './utils/visually-hidden';
+
 
 // header
 @import './header/header';
