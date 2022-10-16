@@ -10,6 +10,12 @@ height: 199px;
 background: url('/src/images/location-modal.jpg');
 border-radius: 10px;
 position: relative;
+@media  (min-width: 768px) {
+width: 448px;
+height: 260px;
+background: url('/src/images/location-modal_tab.jpg');
+margin-bottom: 32px;
+}
 }
 
  // map button padding
@@ -17,7 +23,9 @@ position: relative;
 display: flex;
 justify-content: center;
 padding-bottom: 10%;
-}      
+@media  (min-width: 768px) {
+padding-bottom: 32px;
+}}  
 
 // map button
 .location-modal_button {
@@ -27,5 +35,4 @@ background: #F8D24E;
 border: 0;
 border-radius: 10px;
 }
-
 
