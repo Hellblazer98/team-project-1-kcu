@@ -1,0 +1,225 @@
+// section
+.contacts {
+  background: linear-gradient(rgba(47, 48, 58, 0) 24.5%, #84a178 24.5%);
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(rgba(47, 48, 58, 0) 50.8%, #84a178 50.8%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(rgba(47, 48, 58, 0) 15%, #84a178 15%);
+  }
+}
+
+.contacts__list {
+  @include font-pars($weight: 500, $size: 12px, $lh: 22px, $ls: 0.04em);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+    font-size: 16px;
+  }
+}
+
+// card
+.contacts__card {
+  width: 100%;
+  padding: 40px 32px;
+  background-color: var(--primary-text-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 24px;
+    flex-basis: calc((100% - 32px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
+
+.contacts__card-categories {
+  display: inline-block;
+  min-width: 80px;
+  padding: 0px 24px;
+
+  text-transform: uppercase;
+
+  border-radius: 4px;
+  background-color: var(--yellow-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    padding: 0 12px;
+    min-width: 73px;
+  }
+}
+
+// border
+.contacts__separate {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+
+.contacts__separate-map {
+  padding-top: 20px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts__separate-support {
+  padding-top: 24px;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+}
+
+// address
+.address {
+  font-style: normal;
+}
+
+.address__link {
+  display: block;
+  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.address__city {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+.address__map {
+  display: block;
+  color: var(--addresses-color);
+  transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+// work-time
+.work-time__list {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+
+.work-time__days {
+  display: block;
+}
+
+.work-time__hours {
+  display: block;
+  color: var(--disabled-color);
+}
+
+// btn
+.contacts__button-icon {
+  stroke: currentColor;
+}
+
+.btn-list {
+  padding-top: 32px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contacts__button {
+  @include font-pars($weight: 600, $size: 14px, $lh: 18px, $ls: 0.04em);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 34px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  min-width: 196px;
+
+  text-align: center;
+  background-color: var(--yellow-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:focus {
+    background-color: var(--hover-color);
+    color: var(--primary-text-color);
+  }
+
+  &:disabled {
+    background-color: var(--disabled-color);
+    color: var(--secondary-text-color);
+  }
+}
+
+.contacts__button-franchise {
+  background-color: transparent;
+  border: 2px solid var(--yellow-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border: 2px solid var(--hover-color);
+    background-color: transparent;
+  }
+
+  &:focus {
+    border: 2px solid var(--hover-color);
+    background-color: transparent;
+    color: var(--primary-text-color);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border: 2px solid var(--disabled-color);
+  }
+}
