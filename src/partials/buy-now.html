@@ -9,14 +9,85 @@
     <div class="buy-now__card-set">
       <ul class="buy-now__list list">
         <li class="buy-now__item">
-          <!-- <img src="" alt="" /> -->
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/modalka/buy-now_desk1@1x.jpg 1x,
+                ./images/modalka/buy-now_desk1@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="
+                ./images/modalka/buy-now_mob1@1x.jpg 1x,
+                ./images/modalka/buy-now_mob1@2x.jpg 2x
+              "
+            />
+            <img
+              class="buy-now__img img"
+              src="./images/modalka/buy-now_mob1@1x.jpg"
+              alt="чотири вафельних ріжки з різними кульками морозова"
+            />
+          </picture>
+          <!-- <label class="buy-now__click">
+            <input
+              class="buy-now__checkbox visually-hidden"
+              type="checkbox"
+              name="checkbox"
+              value="checkbox"
+            />
+          </label> -->
           <h2 class="buy-now__card-name">ice cream</h2>
         </li>
         <li class="buy-now__item">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/modalka/buy-now_desk2@1x.jpg 1x,
+                ./images/modalka/buy-now_desk2@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="
+                ./images/modalka/buy-now_mob2@1x.jpg 1x,
+                ./images/modalka/buy-now_mob2@2x.jpg 2x
+              "
+            />
+            <img
+              class="buy-now__img img"
+              src="./images/modalka/buy-now_mob2@1x.jpg"
+              alt="склянка кави з морозивом та кубиками льоду"
+            />
+          </picture>
           <h2 class="buy-now__card-name">ice coffee</h2>
         </li>
         <li class="buy-now__item">
-          <h2 class="buy-now__card-name">milkshake</h2>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/modalka/buy-now_desk3@1x.jpg 1x,
+                ./images/modalka/buy-now_desk3@2x.jpg 2x
+              "
+            />
+            <!-- <source
+              media="(min-width: 480px)"
+              srcset="
+                ./images/modalka/buy-now_mob3@1x.jpg 1x,
+                ./images/modalka/buy-now_mob3@2x.jpg 2x
+              "
+            /> -->
+            <img
+              class="buy-now__img img"
+              src="./images/modalka/buy-now_mob3@1x.jpg"
+              alt="молочний коктель з взбитими вершками та печевом"
+            />
+          </picture>
+
+          <h2 class="buy-now__card-name milkshake">milkshake</h2>
         </li>
       </ul>
     </div>
