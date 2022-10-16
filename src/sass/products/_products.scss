@@ -1,9 +1,6 @@
-.container {
-  padding: 60px 20px;
-  min-width: 320px;
-}
 .products {
-  background-image: url(../images/products/bg_img_large.png);
+  background-image: url(../images/products/bg_sm-@1x.jpg);
+  background-size: cover;
 }
 .products__upper-title {
   @include font-pars($weight: 800, $size: 18px, $lh: 22px, $ls: 0.04em);
