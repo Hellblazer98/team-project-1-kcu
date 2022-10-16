@@ -62,17 +62,15 @@
 }
 .buy-now__card-set {
   display: flex;
-  max-width: 132px;
   justify-content: center;
 }
 .buy-now__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   justify-content: center;
-  gap: 32px;
 
   @media screen and (min-width: 768px) {
-    flex-wrap: nowrap;
+    display: flex;
+    gap: 32px;
     justify-content: space-between;
   }
 }
@@ -94,11 +92,10 @@
   width: 132px;
 
   color: #131313;
-  margin-bottom: 20px;
 
   &::before {
     content: '';
-    display: inline-block;
+    display: block;
 
     position: absolute;
     bottom: -20px;
