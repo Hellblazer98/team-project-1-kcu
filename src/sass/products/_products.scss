@@ -338,7 +338,7 @@
   color: var(--secondary-text-color);
   text-transform: uppercase;
   text-align: center;
-  padding-top: 123px;
+  padding-top: 133px;
   padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
@@ -347,6 +347,7 @@
 
   @media screen and (min-width: 1200px) {
     @include font-pars($weight: 700, $size: 30px, $lh: 37px, $ls: 0.04em);
+    padding-top: 137px;
   }
 }
 .products__text {
