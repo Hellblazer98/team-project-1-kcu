@@ -1,10 +1,23 @@
 .hero {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
     padding-bottom: 240px;
     background-color: var(--primary-bg-color);
-    
+    background-image: url(../images/hero/hero-bg-mobile.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/hero/hero-bg-tablet.svg);
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/hero/hero-bg-desktop.svg);
+    }
+
     &_title {
         width: 247px;
         height: 97px;
@@ -53,6 +66,7 @@
 .hero-group {
     display: flex;
     flex-direction: column;
+    margin-right: 252px;
 }
 
 .bnt-group {
@@ -174,6 +188,7 @@
     fill: azure;
 }
 
+
 .read-more-btn {
     display: flex;
     padding: 0;
@@ -217,6 +232,7 @@
 //     }
 // }
 
+
 .chain-of-stores {
     text-align: end;
 }
@@ -259,3 +275,12 @@
         text-align: right;
     }
 }
+
+
+.hero__image {
+    position: absolute;
+    bottom: -340px;
+    right: 20px;
+}
+
+
