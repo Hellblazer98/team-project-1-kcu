@@ -5,17 +5,16 @@
 .about {
     padding-top: 60px;
     padding-bottom: 42px;
+    background-color: var(--primary-bg-color);
 }
-.about__subtitle {
-    margin-bottom: 12px;
 
+.about__subtitle{
     font-family: 'Montserrat';
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
     @include font-pars(700, 18px, 22px);
 }
-
 
 .about__title {
     margin-bottom: 32px;
