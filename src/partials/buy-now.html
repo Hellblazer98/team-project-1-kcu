@@ -5,26 +5,41 @@
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <strong class="buy-now__title">Buy now</strong>
+    <p class="buy-now__title">Buy now</p>
+
     <div class="buy-now__card-set">
       <ul class="buy-now__list list">
         <li class="buy-now__item ice-cream">
+          <input
+            class="buy-now__checkbox visually-hidden"
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
+
           <img
             class="buy-now__img img"
             src="./images/modalka/buy-now_mob1@1x.jpg"
             alt="чотири вафельних ріжки з різними кульками морозова"
           />
 
-          <h2 class="buy-now__card-name">ice cream</h2>
+          <h3 class="buy-now__card-name">ice cream</h3>
         </li>
+
         <li class="buy-now__item ice-coffee">
+          <input
+            class="buy-now__checkbox visually-hidden"
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
           <img
             class="buy-now__img img"
             src="./images/modalka/buy-now_mob2@1x.jpg"
             alt="склянка кави з морозивом та кубиками льоду"
           />
 
-          <h2 class="buy-now__card-name">ice coffee</h2>
+          <h3 class="buy-now__card-name">ice coffee</h3>
         </li>
         <li class="buy-now__item milkshake">
           <img
@@ -33,10 +48,11 @@
             alt="молочний коктель з взбитими вершками та печевом"
           />
 
-          <h2 class="buy-now__card-name milkshake">milkshake</h2>
+          <h3 class="buy-now__card-name milkshake">milkshake</h3>
         </li>
       </ul>
     </div>
+
     <form class="form-order">
       <div class="form-order__group" role="group">
         <label class="form-order__field">
