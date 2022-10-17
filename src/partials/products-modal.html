@@ -1,11 +1,11 @@
-<div class="products-modal__backdrop is-hidden js-overlay-modal">
+<!-- <div class="products-modal__backdrop is-hidden js-overlay-modal">
   <div class="products-modal__modal js-modal" data-modal="product-modal">
     <button class="products-modal__btn js-modal-close" type="button">
       <svg class="products-modal__btn-icon">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <strong class="products-modal__title">Chololate icecream</strong>
+    <p class="products-modal__title">Chololate icecream</p>
     <img
       class="products-modal__img img"
       src="./images/modalka/modalka-ingredients_mob@1.jpg"
@@ -32,7 +32,7 @@
       </ul>
     </div>
 
-    <h2 class="products-modal__title-ingredients">Ingredients</h2>
+    <h3 class="products-modal__title-ingredients">Ingredients</h3>
     <div class="products-modal__ingredients-box">
       <ul class="products-modal__ingredients-list list">
         <li class="products-modal__ingredients-item">
@@ -74,6 +74,10 @@
             name="name"
             placeholder="Name"
             autofocus
+            required
+            minlength="3"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="ім'я не може бути менше ніж 3 літери"
           />
         </label>
         <label class="form-order__field">
@@ -83,6 +87,12 @@
             type="tel"
             name="tel"
             placeholder="Phone"
+            required
+            minlength="12"
+            maxlength="12"
+            pattern="(?=.*\d).*$"
+            title="телефон не може бути менше ніж 10 символів"
+          />
           />
         </label>
         <label class="form-order__comment">
@@ -98,4 +108,4 @@
       <button class="form-order__btn" type="submit">Submit</button>
     </form>
   </div>
-</div>
+</div> -->

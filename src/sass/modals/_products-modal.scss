@@ -197,7 +197,7 @@
     background: #9cbe8f;
     border: 2px solid #9cbe8f;
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-    z-index: 1;
+    z-index: -1;
 
     @media screen and (min-width: 768px) {
       left: 4;
@@ -232,8 +232,7 @@
 .products-modal__ingredients-box {
   margin-bottom: 48px;
 }
-.products-modal__ingredients-list {
-}
+
 .products-modal__ingredients-item {
   font-weight: 400;
   font-size: 14px;
