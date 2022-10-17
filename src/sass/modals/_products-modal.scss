@@ -1,0 +1,249 @@
+.products-modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.products-modal__backdrop .is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.products-modal__modal {
+  padding: 28px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+  opacity: 1;
+
+  max-width: 450px;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+
+  background: #fcfcfc;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    max-height: 644px;
+    padding: 32px 40px;
+  }
+}
+.products-modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: #fcfcfc;
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+  }
+}
+.products-modal__btn-icon {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.products-modal__title {
+  display: block;
+  text-align: center;
+  max-width: 142px;
+  max-height: 56px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: #131313;
+
+  margin-bottom: 20px;
+
+  &::after {
+    content: '';
+    width: 132px;
+    height: 130px;
+    border-radius: 50%;
+    display: inline-block;
+
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    transform: translate(-50%, 44%);
+
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+    @media screen and (min-width: 480px) {
+      top: 30px;
+      left: 225px;
+      transform: translate(-50%, 60%);
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 30px;
+      left: 285px;
+      transform: translate(-50%, 50%);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    max-height: none;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin-bottom: 24px;
+  }
+}
+
+.products-modal__img {
+  position: relative;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 31px;
+}
+.products-modal__box {
+  margin-bottom: 39px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+}
+.products-modal__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+}
+.products-modal__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  width: 53px;
+  height: 72px;
+  text-align: center;
+  z-index: 20;
+
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+  }
+}
+.products-modal__text-numbers {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(28 / 10);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16px;
+
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(28 / 12);
+    margin-bottom: 19px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    top: -1.5px;
+    left: 2.7px;
+
+    width: 43px;
+    height: 43px;
+    border-radius: 40px;
+    background: #9cbe8f;
+    border: 2px solid #9cbe8f;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      left: 4;
+      width: 53px;
+      height: 53px;
+    }
+  }
+}
+.products-modal__text {
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #131313;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
+}
+.products-modal__title-ingredients {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+
+  display: block;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.products-modal__ingredients-box {
+  margin-bottom: 48px;
+}
+.products-modal__ingredients-list {
+}
+.products-modal__ingredients-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(25 / 14);
+  color: #131313;
+
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
