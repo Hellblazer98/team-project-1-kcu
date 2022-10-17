@@ -32,11 +32,11 @@ border-radius: 10px;
 resize: none;
 width: 224px;
 height: 32px;
+padding-left: 12px;
 &:last-child {
 height: 64px;   
 }
 &::placeholder {
-padding-left: 12px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
