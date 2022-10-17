@@ -4,37 +4,7 @@
     padding-top: 50px;
     padding-bottom: 240px;
     background-color: var(--primary-bg-color);
-    background-image: url(../images/hero/2v1_sm-@1x-320.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/hero/2v1_sm-@2x-640.png);
-    }
-
-    @media screen and (min-width: 481px) {
-        background-image: url(../images/hero/2v1_md-@1x-768.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/hero/2v1_md-@2x-1535.png);
-        }
-    }
-
-    @media screen and (min-width: 769px) {
-        background-image: url(../images/hero/2v1_lg-@1x-1200.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/hero/2v1_lg-@2x-2400.png);
-        }
-    }
-
+    
     &_title {
         width: 247px;
         height: 97px;
@@ -164,20 +134,64 @@
     }
 }
 
+.down-hero {
+    display: flex;
+    gap: 32px;
 
+    @media screen and (min-width: 1200px) {
+        gap: 14px;
+    }
+}
+
+.read-more {
+    align-items: center;
+    justify-content: center;
+}
 
 .under-title {
     display: none;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    margin-bottom: 12px;
 
     @media screen and (min-width: 768px) {
         display: block;
-        width: 150px;
+        width: 160px;
         height: 85px;
 
     }
 
-    @media screen and (min-width: 1200px) {}
+    @media screen and (min-width: 1200px) {
+        width: 200px;
+        height: 80px;
+        margin-bottom: 32px;
+    }
 }
+
+.under-title-icon {
+    fill: azure;
+}
+
+.read-more-btn {
+    display: flex;
+    padding: 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    user-select: none;  
+    color: var(--primary-text-color);
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: var(--secondary-text-color);
+    }
+}
+
+
 
 // .group-img {
 //     display: flex;
