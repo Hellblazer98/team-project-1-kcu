@@ -22,7 +22,7 @@ margin-bottom: 32px;
 .location-modal_button--div {
 display: flex;
 justify-content: center;
-padding-bottom: 10%;
+padding-bottom: 28px;
 @media  (min-width: 768px) {
 padding-bottom: 32px;
 }}  
@@ -31,7 +31,7 @@ padding-bottom: 32px;
 .location-modal_button {
 width: 134px;
 height: 42px;
-background: #F8D24E;
+background: var(--yellow-color);
 border: 0;
 border-radius: 10px;
 }
