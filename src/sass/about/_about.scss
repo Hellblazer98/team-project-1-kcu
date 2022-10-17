@@ -1,13 +1,182 @@
 .about {
+    padding-top: 60px;
+    padding-bottom: 42px;
     background-color: var(--primary-bg-color);
 }
+
+.about__subtitle {
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    @include font-pars(700, 18px, 22px,);
+
+    @media screen and (min-width: 768px) {
+    @include font-pars(800, 22px, 27px, 0.04em);
+    }
+    
+    @media screen and (min-width: 1200px) {
+    @include font-pars(800, 30px, 37px, 0.04em);
+    }
+}
+
 .about__title {
+    margin-bottom: 32px;
+    padding-left: 36px;
+    padding-right: 44px;
 
-font-family: 'Seymour One';
-font-style: normal;
+    font-family: 'Seymour One';
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+@include font-pars(400, 30px, 38px, 0.04em);
 
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-@include font-pars(400, 30px, 38px);
+@media screen and (min-width: 768px) {
+    @include font-pars(400, 34px, 43px, 0.06em);
+    }
+    
+    @media screen and (min-width: 1200px) {
+    @include font-pars(400, 36px, 45px, 0.06em);
+    }
+}
+.about__group {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+}
+    @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    align-items: center;
+}
+}
+.about__img-wrap {
+    display: flex;
+    margin: auto;
+    padding-top: 22px;
+
+    @media screen and (min-width: 768px) {
+    margin: 0;
+    padding-top: 24px;
+    }
+    @media screen and (min-width: 1200px) {
+    padding-top: 31px;
+    }
+}
+.about__img {
+    position: relative;
+    margin: auto;
+    z-index: 10;
+    @media screen and (min-width: 768px) {
+    margin: 0;
+    }
+}
+.about__img::after {
+    content: "";
+    position: absolute;
+    width: 278px;
+    height: 278px;
+    display: block;
+    background: var(--yellow-color);
+    border-radius: 50%;
+    transform: translateY(-300px);
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+    width: 335px;
+    height: 335px;
+    transform: translateY(-355px);
+    }
+    @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+    transform: translateY(-530px) translateX(9px);
+    }
+  }
+.about__story {
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    max-width: 336px;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-left: 100px;
+    max-width: 463px;
+    }
+}
+.about__story-list {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include font-pars(400, 12px, 21px, 0.04em);
+    text-align: center;
+
+   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0; 
+    text-align: left;
+}
+   @media screen and (min-width: 1200px) {
+    max-height: 257px;
+    @include font-pars(400, 14px, 28px, 0.04em);
+}
+}
+.about__story-item {
+    margin-bottom: 4px;
+    &--hidden {
+       display: none; 
+    }
+
+    &:last-child {
+    margin-bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
+    margin-bottom: 8px;  
+    display: block;  
+    }
+    @media screen and (min-width: 1200px) {
+        @include font-pars(400, 14px, 27px, 0.04em);
+        
+        &--big-text {
+            @include font-pars(400, 16px, 28px, 0.04em); 
+        }
+        }
+}
+.about__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 0;
+    width: 164px;
+    height: 42px;
+    background: var(--yellow-color);
+    border: none;
+    border-radius: 10px;
+    @include font-pars(600, 14px, 18px);
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
+
+    &:hover {
+    background-color: var(--hover-color);
+    }
+    &:focus {
+    background-color: var(--hover-color);
+    color: var(--primary-text-color);
+    }
+
+    @media screen and (min-width: 768px){
+    margin-top: 48px;
+    margin-right: auto;
+    margin-left: 0;
+    }
+
+}
+.about__btn-icon {
+    display: flex;
+    margin-left: 5px;
+    stroke: currentColor;
+    fill: none;
 }

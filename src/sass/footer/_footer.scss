@@ -1,5 +1,9 @@
 @import './socials';
 
+.footer {
+  background-color: var(--primary-bg-color);
+}
+
 .footer__container {
   padding-top: 39px;
   padding-bottom: 62px;
@@ -23,17 +27,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 66px;
   }
 }
 
 .footer__titles {
   margin-bottom: 42px;
 
-  // TABLET+
+  // TABLET
   @media screen and (min-width: 768px) {
-    flex-basis: 50%;
+    flex-basis: 352px;
     margin-bottom: 0;
+  }
+  // DESKTOP
+  @media screen and (min-width: 1200px) {
+    flex-basis: 504px;
   }
 }
 
