@@ -13,4 +13,14 @@ var typed = new Typed('.typed', {
         showCursor: false,
         loop: true,
 
-      });
+});
+      
+
+var typed = new Typed('.typed-2', {
+        // Waits 1000ms after typing "First"
+        strings: ['00% natural'],
+        typeSpeed: 100,
+        showCursor: false,
+        loop: true,
+
+});
