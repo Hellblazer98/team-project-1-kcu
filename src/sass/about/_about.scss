@@ -1,19 +1,22 @@
-// .about__container {
-
-// }
-
 .about {
     padding-top: 60px;
     padding-bottom: 42px;
     background-color: var(--primary-bg-color);
 }
 
-.about__subtitle{
-    font-family: 'Montserrat';
+.about__subtitle {
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
-    @include font-pars(700, 18px, 22px);
+    @include font-pars(700, 18px, 22px,);
+
+    @media screen and (min-width: 768px) {
+    @include font-pars(800, 22px, 27px, 0.04em);
+    }
+    
+    @media screen and (min-width: 1200px) {
+    @include font-pars(800, 30px, 37px, 0.04em);
+    }
 }
 
 .about__title {
@@ -26,6 +29,14 @@
     text-align: center;
     text-transform: uppercase;
 @include font-pars(400, 30px, 38px, 0.04em);
+
+@media screen and (min-width: 768px) {
+    @include font-pars(400, 34px, 43px, 0.06em);
+    }
+    
+    @media screen and (min-width: 1200px) {
+    @include font-pars(400, 36px, 45px, 0.06em);
+    }
 }
 .about__group {
     @media screen and (min-width: 768px) {
@@ -36,7 +47,6 @@
     justify-content: flex-start;
     align-items: center;
 }
-
 }
 .about__img-wrap {
     display: flex;
@@ -48,13 +58,13 @@
     padding-top: 24px;
     }
     @media screen and (min-width: 1200px) {
-        margin: 0;
-        padding-top: 31px;
-        }
+    padding-top: 31px;
+    }
 }
 .about__img {
     position: relative;
     margin: auto;
+    z-index: 10;
     @media screen and (min-width: 768px) {
     margin: 0;
     }
@@ -114,13 +124,24 @@
 }
 .about__story-item {
     margin-bottom: 4px;
+    &--hidden {
+       display: none; 
+    }
 
     &:last-child {
     margin-bottom: 0;
     }
     @media screen and (min-width: 768px) {
-    margin-bottom: 8px;    
+    margin-bottom: 8px;  
+    display: block;  
     }
+    @media screen and (min-width: 1200px) {
+        @include font-pars(400, 14px, 27px, 0.04em);
+        
+        &--big-text {
+            @include font-pars(400, 16px, 28px, 0.04em); 
+        }
+        }
 }
 .about__btn {
     display: flex;
@@ -136,14 +157,26 @@
     border: none;
     border-radius: 10px;
     @include font-pars(600, 14px, 18px);
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
+
+    &:hover {
+    background-color: var(--hover-color);
+    }
+    &:focus {
+    background-color: var(--hover-color);
+    color: var(--primary-text-color);
+    }
 
     @media screen and (min-width: 768px){
     margin-top: 48px;
     margin-right: auto;
     margin-left: 0;
     }
+
 }
 .about__btn-icon {
     display: flex;
     margin-left: 5px;
+    stroke: currentColor;
+    fill: none;
 }
