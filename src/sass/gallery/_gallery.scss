@@ -5,8 +5,8 @@
 }
 
 .gallery {
-    background-color: #F5F5F5;
-    background-image: url(../images/gallery/IcecreamBG.png);
+    // background-color: #F5F5F5;
+    // background-image: url(../images/gallery/IcecreamBG.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,19 +15,16 @@
     @media screen and (min-width:320px) and (max-width: 767px) {
         padding-left: 20px;
         padding-right: 20px;
-        max-height: 958px;
     }
     
     @media screen and (min-width: 768px) {
         padding-left: 32px;
         padding-right: 32px;
-        height: 958px;
     }
 
     @media screen and (min-width: 1200px) {
         padding-left: 93px;
         padding-right: 93px;
-        height: 1020px;
     }
 }
 
