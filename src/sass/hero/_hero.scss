@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
-    padding-bottom: 240px;
+    padding-bottom: 10px;
     background-color: var(--primary-bg-color);
     background-image: url(../images/hero/hero-bg-mobile.svg);
     background-position: bottom;
@@ -11,18 +11,18 @@
 
     @media screen and (min-width: 768px) {
         background-image: url(../images/hero/hero-bg-tablet.svg);
-
     }
 
     @media screen and (min-width: 1200px) {
         background-image: url(../images/hero/hero-bg-desktop.svg);
+        padding-bottom: 50px;
     }
 
     &_title {
         width: 247px;
         height: 97px;
         margin-bottom: 32px;
-        font-family: var(--title-font);
+        font-family: 'Seymour One';
         font-weight: 400;
         font-size: 26px;
         line-height: calc(33 / 26);
@@ -149,8 +149,12 @@
 }
 
 .down-hero {
-    display: flex;
-    gap: 32px;
+    display: none;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 32px;
+    }
 
     @media screen and (min-width: 1200px) {
         gap: 14px;
@@ -158,6 +162,8 @@
 }
 
 .read-more {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -191,6 +197,7 @@
 
 .read-more-btn {
     display: flex;
+    margin-right: auto;
     padding: 0;
     border: none;
     justify-content: center;
