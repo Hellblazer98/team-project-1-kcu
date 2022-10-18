@@ -23,11 +23,17 @@
 
 }
 
+.logo__menu {
+    @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 44px;
+    }
+}
 
 .menu-toggle {
     position: absolute;
-    top: 20px;
-    right: 25px;
+    top: 16px;
+    right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +50,11 @@
     :focus {
         fill: var(--secondary-text-color);
     }
+
+    @media screen and (min-width: 768px) {
+        top: 32px;
+        right: 32px;
+    }
 }
 
 .mobile-menu {
@@ -55,16 +66,13 @@
     }
 }
 
-.mobile-contacts {
-    margin-bottom: 64px;
-}
-
 .mobile-nav .link {
+    outline: none;
     color: var(--primary-text-color);
     transition: fill var(--anim-slow);
 
     &:hover,
-    :focus {
+    &:focus {
         color: var(--secondary-text-color);
     }
 }
@@ -85,6 +93,6 @@
 
 }
 
-.menu {
+.mob-btn {
     margin: 0 auto 63px;
 }
