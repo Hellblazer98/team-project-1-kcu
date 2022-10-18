@@ -83,7 +83,7 @@
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: calc(28 / 20);
-    margin-bottom: 55px;
+    margin-bottom: 103px;
   }
 }
 .buy-now__card-set {
@@ -92,11 +92,11 @@
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 }
+
 .buy-now__list {
-  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,20 +116,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  border: 2px solid;
-  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-  border-radius: 15px;
-  min-width: 130px;
-  min-height: 135px;
   margin-bottom: 84px;
 
   &:last-child {
     margin-bottom: 0px;
   }
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.buy-now__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 50;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.buy-now__card-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  padding-top: 96px;
+
+  border: 2px solid;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+  min-width: 130px;
+  min-height: 135px;
+
   &::after {
     content: '';
+
     width: 131px;
     height: 132px;
     border-radius: 50%;
@@ -138,23 +166,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -82%);
+    transform: translate(-50%, -94%);
   }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-}
-
-.buy-now__checkbox:checked + .ice-cream {
-  background-color: #96af8c;
-}
-
-.buy-now__checkbox:checked + .ice-coffee {
-  background-color: #efd478;
-}
-.buy-now__checkbox:checked + .milkshake {
-  background-color: #d6936d;
 }
 .ice-cream {
   border-color: #96af8c;
@@ -198,28 +211,16 @@
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
 }
-.buy-now__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-  display: block;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.buy-now__card-name {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #131313;
-  padding-top: 96px;
+.buy-now__checkbox:checked ~ .ice-cream {
+  background-color: #96af8c;
 }
 
+.buy-now__checkbox:checked ~ .ice-coffee {
+  background-color: #efd478;
+}
+.buy-now__checkbox:checked ~ .milkshake {
+  background-color: #d6936d;
+}
 /**
   |============================
   |         Form
@@ -235,12 +236,21 @@
 
 .form-order__group {
   display: block;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32;
+  }
 }
 .form-order__field {
   display: block;
   position: relative;
-  margin-bottom: 12px;
   text-align: center;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 .form-order__label {
   display: block;
@@ -281,7 +291,6 @@
 }
 .form-order__comment {
   display: block;
-  margin-bottom: 24px;
 }
 .form-order__textarea {
   display: block;
