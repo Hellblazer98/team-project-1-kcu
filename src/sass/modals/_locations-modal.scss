@@ -1,0 +1,38 @@
+// Location
+// map photo
+.location-modal__div {
+display: block;
+left: 50%;
+transform:translateX(-50%);
+margin-bottom: 20px;
+width: 224px;
+height: 199px;
+background: url('/src/images/location-modal.jpg');
+border-radius: 10px;
+position: relative;
+@media  (min-width: 768px) {
+width: 448px;
+height: 260px;
+background: url('/src/images/location-modal_tab.jpg');
+margin-bottom: 32px;
+}
+}
+
+ // map button padding
+.location-modal_button--div {
+display: flex;
+justify-content: center;
+padding-bottom: 28px;
+@media  (min-width: 768px) {
+padding-bottom: 32px;
+}}  
+
+// map button
+.location-modal_button {
+width: 134px;
+height: 42px;
+background: var(--yellow-color);
+border: 0;
+border-radius: 10px;
+}
+
