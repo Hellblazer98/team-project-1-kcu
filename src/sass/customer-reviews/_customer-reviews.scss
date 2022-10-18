@@ -1,0 +1,149 @@
+.customers {
+    padding-top: 80px;
+    padding-bottom: 48px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 128px;
+        padding-bottom: 100px;
+    }
+}
+
+
+.gallery, .customers {
+    background-image: url(../images/backgrounds/secondary-bg-sm@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/backgrounds/secondary-bg-sm@2x.png);
+    }
+
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/backgrounds/secondary-bg-md@1x.png);
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/backgrounds/secondary-bg-lg@1x.png);
+    }
+}
+
+.slider__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider__img {
+    border-radius: 50%;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 28px;
+    }
+
+}
+
+.slider__content {
+    width: 100%;
+    background-color:var(--primary-bg-color);
+    border-radius: 10px;
+    padding: 34px 29px;
+    margin-bottom: 30px;
+
+
+    @media screen and (min-width: 768px) {
+        border-radius: 24px;
+        padding: 28px 80px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 968px;
+        padding: 39px 74px;
+    }
+}
+
+.slider__descr {
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.86;
+    }
+}
+
+.slider__person {
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.slider__customer {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    text-align: center;
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+
+}
+
+// Слайдер
+
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.slick-dots li{
+    list-style: none;
+    
+}
+
+.slick-dots li button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button{
+    background-color:var(--primary-bg-color);
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list{
+    overflow: hidden;
+}

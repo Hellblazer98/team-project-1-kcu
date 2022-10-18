@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--primary-text-color);
-    background-color: var(--primary-bg-color);
+    // background-color: var(--primary-bg-color);
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
     padding-left: 32px;
     padding-right: 32px;
   }
-  
+
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     padding-left: 16px;
