@@ -1,14 +1,24 @@
 // Franchise
+.franchise__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 
-// forms div
-.franchise-modal__forms {
-margin-bottom: 28px;
-padding-left: 28px;
-padding-right: 28px;
-@media  (min-width: 768px) {
-margin-bottom: 32px;  
-}}
- 
+    @media  (min-width: 768px) {
+        gap: 32px;
+    }
+}
+
+.franchise__title {
+    margin-bottom: 20px;
+
+    @media  (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+}
+
 // form
 .franchise-modal__form {
 display: flex;
@@ -26,45 +36,68 @@ display: none;
 
 // input
 .franchise-modal__input {
-background: rgba(248, 210, 78, 0.1);
-border: 1px solid var(--primary-bg-color);
-border-radius: 10px;
-resize: none;
-width: 224px;
-height: 32px;
-padding-left: 12px;
-&:last-child {
-height: 64px;   
-}
-&::placeholder {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.4;
-color: var(--secondary-text-color);
-}
-@media  (min-width: 768px) {
-width: 368px;
-height: 42px;
-&:last-child {
-height: 84px;   
-}}}
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 10px;
+    resize: none;
+    width: 224px;
+    height: 32px;
+    padding-left: 12px;
+    &:last-child {
+    height: 64px;   
+    }
 
-// submit padding
-.franchise-modal_button--div {
-padding-bottom: 28px;
-display: flex;
-justify-content: center;
-@media  (min-width: 768px) {
-padding-bottom: 32px;
-}}
+    &::placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--secondary-text-color);
+    }
+
+    @media  (min-width: 768px) {
+    width: 368px;
+    height: 42px;
+    &:last-child {
+    height: 84px;   
+    }}}
+
+
 
 // submit button
 .franchise-modal_button {
-width: 134px;
-height: 42px;
-background: var(--yellow-color);
-border: 0;
-border-radius: 10px;
+  padding: 12px 34px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #131313;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
+  &:disabled {
+    background-color: #ababab;
+  }
 }
