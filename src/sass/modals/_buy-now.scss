@@ -12,7 +12,6 @@
   visibility: hidden;
 }
 
-
 .buy-now__modal {
   opacity: 0;
   visibility: hidden;
@@ -39,13 +38,11 @@
   }
 }
 
-
 .modal.active,
-.backdrop.active{
-   opacity: 1;
-   visibility: visible;
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
 }
-
 
 .buy-now__btn {
   position: absolute;
@@ -131,7 +128,7 @@
     margin-bottom: 0px;
   }
 
-  &::before {
+  &::after {
     content: '';
     width: 131px;
     height: 132px;
@@ -143,7 +140,27 @@
     left: 50%;
     transform: translate(-50%, -82%);
   }
-  &:nth-child(1)::before {
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.buy-now__checkbox:checked + .ice-cream {
+  background-color: #96af8c;
+}
+
+.buy-now__checkbox:checked + .ice-coffee {
+  background-color: #efd478;
+}
+.buy-now__checkbox:checked + .milkshake {
+  background-color: #d6936d;
+}
+.ice-cream {
+  border-color: #96af8c;
+  &::after {
+    content: '';
+    z-index: -1;
     background: linear-gradient(
         0deg,
         rgba(156, 190, 143, 0.7),
@@ -152,7 +169,12 @@
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
-  &:nth-child(2)::before {
+}
+.ice-coffee {
+  border-color: #efd478;
+  &::after {
+    content: '';
+    z-index: -1;
     background: linear-gradient(
         0deg,
         rgba(248, 210, 78, 0.7),
@@ -161,7 +183,12 @@
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
-  &:nth-child(3)::before {
+}
+.milkshake {
+  border-color: #d6936d;
+  &::after {
+    content: '';
+    z-index: -1;
     background: linear-gradient(
         0deg,
         rgba(213, 117, 63, 0.7),
@@ -170,23 +197,6 @@
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-}
-
-// .buy-now__checkbox:checked {
-//   background-color: aqua;
-// }
-.ice-cream {
-  border-color: #96af8c;
-}
-.ice-coffee {
-  border-color: #efd478;
-}
-.milkshake {
-  border-color: #d6936d;
 }
 .buy-now__img {
   position: absolute;
@@ -209,6 +219,12 @@
   color: #131313;
   padding-top: 96px;
 }
+
+/**
+  |============================
+  |         Form
+  |============================
+*/
 .form-order {
   @media screen and (min-width: 768px) {
     max-width: 368px;
