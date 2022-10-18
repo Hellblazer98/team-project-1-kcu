@@ -1,0 +1,70 @@
+// Franchise
+
+// forms div
+.franchise-modal__forms {
+margin-bottom: 28px;
+padding-left: 28px;
+padding-right: 28px;
+@media  (min-width: 768px) {
+margin-bottom: 32px;  
+}}
+ 
+// form
+.franchise-modal__form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+width: 100%;
+}
+
+// label
+.franchise-modal__label {
+display: none;
+}
+
+// input
+.franchise-modal__input {
+background: rgba(248, 210, 78, 0.1);
+border: 1px solid var(--primary-bg-color);
+border-radius: 10px;
+resize: none;
+width: 224px;
+height: 32px;
+padding-left: 12px;
+&:last-child {
+height: 64px;   
+}
+&::placeholder {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.4;
+color: var(--secondary-text-color);
+}
+@media  (min-width: 768px) {
+width: 368px;
+height: 42px;
+&:last-child {
+height: 84px;   
+}}}
+
+// submit padding
+.franchise-modal_button--div {
+padding-bottom: 28px;
+display: flex;
+justify-content: center;
+@media  (min-width: 768px) {
+padding-bottom: 32px;
+}}
+
+// submit button
+.franchise-modal_button {
+width: 134px;
+height: 42px;
+background: var(--yellow-color);
+border: 0;
+border-radius: 10px;
+}
