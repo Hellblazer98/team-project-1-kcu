@@ -1,29 +1,28 @@
-<section class="container" id="read-more">
-    <!-- Read more modal -->
-    <div class="overlay js-overlay-modal">
-<div class="modal__div modal visually-hidden" data-modal="1">
-    <!-- Button close -->
-    <button type="button" class="modal-button">
-        <!-- Svg -->
-    <svg width="9px" height="9px" class="read-more__svg">
-        <use href="./images/sprite.svg#crest"></use>
+<div class="modal__div modal" data-modal="3">
+  <!-- Button close -->
+  <button class="buy-now__btn js-modal-close" type="button">
+    <svg class="buy-now__btn-icon">
+      <use href="./images/sprite.svg#icon-close"></use>
     </svg>
-    </button>
-    <!-- h2 -->
-<h2 class="modal__h2">А що трапилось?</h2>
-<!-- Video -->
-<div class="read-more__video" data-src="https://www.youtube.com/embed/P8Fp9hjc7-k?controls=0">
-<svg width="27px" height="27px" class="read-more--play_button">
-<use href="./images/sprite.svg#play_button"></use>
-</svg>
+  </button>
+  <div class="read-more__wrap">
+    <h3 class="modal__h3">А що трапилось?</h3>
+
+    <iframe
+      class="iframe"
+      src="https://www.youtube.com/embed/P8Fp9hjc7-k"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <p class="modal__p">
+      Вранці 8 жовтня на Кримському мосту вибухнула вантажівка. Обрушилися три
+      прольоти на автомобільній частині мосту. Рух автомобілів та поїздів мостом
+      закрито. Терміни відновлення мосту поки що не називаються.
+    </p>
+  </div>
 </div>
-<!-- Text -->
-<p class="modal__p">
-    Вранці 8 жовтня на Кримському мосту вибухнула вантажівка.
-    Обрушилися три прольоти на автомобільній частині мосту.
-    Рух автомобілів та поїздів мостом закрито.
-    Терміни відновлення мосту поки що не називаються.
-</p>
-</div>
-</div>
-</section>
+
+<div class="backdrop js-overlay-modal"></div>
