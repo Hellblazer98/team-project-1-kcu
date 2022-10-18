@@ -1,17 +1,31 @@
 // section
 .contacts {
-    background-image: linear-gradient(#00000000 24.5%, #84a178 24.5%), url(/src/images/backgrounds/secondary-bg-sm@1x.png);
-   
+  background-image: url(/src/images/backgrounds/secondary-bg-sm@1x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
-    @media screen and (min-width: 768px) {
-    background-image: linear-gradient(#00000000 50.8%, #84a178 50.8%);
-      
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/backgrounds/secondary-bg-md@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(#00000000 15%, #84a178 15%);
-     
+    background-image: url(/src/images/backgrounds/secondary-bg-lg@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
+
+}
+
+.contacts__container {
+background-image: linear-gradient(#00000000 25%, #84a178 25%);
 }
 
 .contacts__list {
@@ -22,7 +36,6 @@
   gap: 20px;
 
   color: var(--secondary-text-color);
- 
 
   @media screen and (min-width: 768px) {
     gap: 16px;
