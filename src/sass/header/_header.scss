@@ -1,13 +1,8 @@
-.header {
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 500;
-    // background-color: var(--primary-bg-color);
+.page_header {
+    background-color: var(--primary-bg-color);
 }
 
-.header__container {
+.header_container {
     padding-top: 12px;
     padding-bottom: 6px;
     display: flex;
@@ -22,7 +17,7 @@
     }
 }
 
-.logo__icon {
+.logo {
     @media screen and (min-width: 768px) {
         width: 48px;
         height: 44px;
@@ -34,7 +29,7 @@
     }
 }
 
-.nav {
+.header_nav {
     display: none;
 
     @media screen and (min-width: 1200px) {
@@ -45,24 +40,22 @@
     }
 }
 
-.nav__list {
+.nav {
     display: flex;
     gap: 27px;
     align-items: center;
 }
 
-.nav__item .link {
-    @include font-pars($weight: 700, $size: 16px, $lh: 20px, $ls: 0.04em);
-    font-style: normal;
+.nav_item {
     transition: color var(--anim-slow);
 
     &:hover,
     &:focus {
-        color: var(--yellow-color);
+        color: var(--accent-txt-cl);
     }
 }
 
-.header__btn-group {
+.modal_group {
     display: flex;
     margin-left: auto;
     gap: 32px;
@@ -74,7 +67,7 @@
     }
 }
 
-.btn-menu {
+.menu_btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +83,7 @@
     }
 }
 
-.buy-btn {
+.buy_btn {
     display: none;
 
     @media screen and (min-width: 768px) {
@@ -101,27 +94,17 @@
         margin-left: auto;
         padding: 0;
         font-family: inherit;
-        @include font-pars($weight: 600, $size: 14px, $lh: 17px, $ls: 0.04em);
         user-select: none;
         width: 152px;
         height: 42px;
-        background: var(--yellow-color);
+        background: #F8D24E;
         border: none;
         border-radius: 10px;
         cursor: pointer;
     }
-
-    &:hover {
-        background-color: var(--hover-color);
-    }
-    
-    &:focus {
-        background-color: var(--hover-color);
-        color: var(--primary-text-color);
-    }
 }
 
-.buy-btn__icon {
+.buy_btn_icon {
     display: flex;
     stroke: currentColor;
     fill: none;
