@@ -19,6 +19,7 @@
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     height: 100vh;
+    padding: 32px 40px;
   }
 
   @media screen and (min-width: 768px) {
@@ -68,23 +69,33 @@
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: calc(24 / 16);
+  font-size: 20px;
+  line-height: calc(28 / 20);
   color: #131313;
 
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    max-height: none;
+    margin-bottom: 24px;
+  }
+}
+.products-modal__image {
+  position: relative;
 
   &::after {
     content: '';
-    width: 132px;
+    width: 131px;
     height: 130px;
     border-radius: 50%;
     display: inline-block;
 
     position: absolute;
     top: 50px;
-    left: 160px;
-    transform: translate(-50%, 44%);
+    left: 50px;
+    transform: translate(67%, -30%);
+    z-index: -1;
 
     background: linear-gradient(
         0deg,
@@ -94,30 +105,20 @@
       #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 
-    @media screen and (min-width: 480px) {
-      top: 30px;
-      left: 225px;
-      transform: translate(-50%, 60%);
+    @media screen and (min-width: 320px) {
+      top: 50px;
+      left: 50px;
+      transform: translate(18%, -30%);
     }
 
     @media screen and (min-width: 768px) {
-      top: 30px;
-      left: 285px;
-      transform: translate(-50%, 50%);
+      top: 50px;
+      left: 50px;
+      transform: translate(97%, -28%);
     }
   }
-
-  @media screen and (min-width: 768px) {
-    max-width: none;
-    max-height: none;
-    font-size: 20px;
-    line-height: calc(28 / 20);
-    margin-bottom: 24px;
-  }
 }
-
 .products-modal__img {
-  position: relative;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -165,6 +166,7 @@
   align-items: center;
   text-align: center;
   margin-bottom: 16px;
+  margin-top: 3px;
 
   color: #131313;
 
