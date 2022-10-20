@@ -9,9 +9,11 @@ var options = {
 var typed = new Typed('.typed', {
         // Waits 1000ms after typing "First"
         strings: [' radition and love '],
-        typeSpeed: 100,
+        typeSpeed: 110,
         showCursor: false,
         loop: true,
+        smartBackspace: true,
+        backSpeed: 80,
 
 });
       
@@ -22,5 +24,7 @@ var typed = new Typed('.typed-2', {
         typeSpeed: 100,
         showCursor: false,
         loop: true,
+        smartBackspace: true,
+        backSpeed: 80,
 
 });
