@@ -26,7 +26,6 @@ display: none;
 
 // input
 .franchise-modal__input {
-<<<<<<< Updated upstream
 background: rgba(248, 210, 78, 0.1);
 border: 1px solid var(--primary-bg-color);
 border-radius: 10px;
@@ -34,9 +33,11 @@ resize: none;
 width: 224px;
 height: 32px;
 padding-left: 12px;
+outline: transparent;
 &:last-child {
 height: 64px;   
 }
+
 &::placeholder {
 font-family: 'Montserrat';
 font-style: normal;
@@ -45,49 +46,21 @@ font-size: 12px;
 line-height: 1.4;
 color: var(--secondary-text-color);
 }
+
 @media  (min-width: 768px) {
 width: 368px;
 height: 42px;
 &:last-child {
 height: 84px;   
-}}}
-=======
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--primary-bg-color);
-    border-radius: 10px;
-    resize: none;
-    width: 224px;
-    height: 32px;
-    padding-left: 12px;
-    &:last-child {
-    height: 64px;   
-    }
-
-    &::placeholder {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.4;
-    color: var(--secondary-text-color);
-    }
-
-    @media  (min-width: 768px) {
-    width: 368px;
-    height: 42px;
-    &:last-child {
-    height: 84px;   
-    }}
+}}
     
-    &:not(:placeholder-shown):required:valid {
-    border-color: var(--primary-bg-color);
-    }
-    &:not(:placeholder-shown):required:invalid {
-    border-color: #ff0000;
-    }
-  }
-
->>>>>>> Stashed changes
+&:not(:placeholder-shown):required:valid {
+border-color: var(--primary-bg-color);
+}
+&:not(:placeholder-shown):required:invalid {
+border-color: #ff0000;
+}
+}
 
 // submit padding
 .franchise-modal_button--div {
