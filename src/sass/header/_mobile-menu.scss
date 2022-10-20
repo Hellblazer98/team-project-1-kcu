@@ -10,7 +10,7 @@
     background-color: var(--primary-bg-color);
     transform: translateX(150%);
     transition: transform var(--anim-slow);
-    z-index: 9999;
+    z-index: 200;
 
 
     &.is-open {
@@ -44,7 +44,7 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    transition: fill var(--anim-slow);
+    transition: fill .25s cubic-bezier(.4, 0, .2, 1);
 
     &:hover,
     :focus {
@@ -59,40 +59,45 @@
 
 .mobile-menu {
     margin-top: 48px;
-    margin-bottom: auto;
+    margin-bottom: 110px;
 
     @media screen and (min-width: 768px) {
         margin-top: 70px;
     }
 }
 
-.mobile-nav .link {
-    outline: none;
-    color: var(--primary-text-color);
-    transition: fill var(--anim-slow);
-
-    &:hover,
-    &:focus {
-        color: var(--secondary-text-color);
-    }
-}
-
 .mobile-nav {
+    .link{
+        outline: none;
+        color: var(--primary-text-color);
+        transition: color .25s cubic-bezier(.4, 0, .2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--secondary-text-color);
+        }
+    }
+    
     display: flex;
     text-align: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: calc(59 / 48);
-    letter-spacing: 0.02em;
+    @include font-pars($weight: 600, $size: 20px, $lh: 25px, $ls: 0.02em);
     color: var(--primary-text-color);
-}
+    
+    @media screen and (min-width: 480px) {
+        @include font-pars($weight: 700, $size: 48px, $lh: 59px, $ls: 0.02em);
+    }
 
-.mobile-nav:not(:last-child) {
-    margin-bottom: 32px;
-
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    
+    }
 }
 
 .mob-btn {
     margin: 0 auto 63px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
