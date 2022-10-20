@@ -1,4 +1,8 @@
 .hero {
+    .container {
+        position: relative;
+    }
+
     margin-left: auto;
     margin-right: auto;
     padding-top: 90px;
@@ -44,10 +48,6 @@
     }
 }
 
-.hero .container {
-    position: relative;
-}
-
 .top-hero {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -55,19 +55,19 @@
     flex-direction: row;
     display: flex;
     margin: 0 auto;
-}
 
-.top-hero__left-side {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 200px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 56px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 100px;
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: 56px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 100px;
+        }
     }
 }
 
@@ -94,6 +94,7 @@
     color: var(--secondary-text-color);
     background-color: transparent;
     cursor: pointer;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
 
     &:hover {
         border-color: var(--hover-color);
@@ -107,7 +108,7 @@
     @media screen and (min-width: 1200px) {
         width: 132px;
         min-height: 42px;
-        @include font-pars($weight: 400, $size: 14px, $lh: 18px, $ls: 0.04em);
+        @include font-pars($weight: 600, $size: 14px, $lh: 18px, $ls: 0.04em);
     }
 
 }
@@ -130,6 +131,7 @@
     color: var(--yellow-color);
     background-color: transparent;
     cursor: pointer;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1);
 
     &:hover {
         color: var(--hover-color);
@@ -195,22 +197,15 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        gap: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        gap: 14px;
     }
 }
 
 .many-ice-cream {
-    display: none;
 
     @media screen and (min-width: 768px) {
-        display: block;
         position: absolute;
         left: 32px;
-        top: 165px;
+        top: 160px;
         z-index: 100;
     }
 
@@ -233,25 +228,25 @@
     @media screen and (min-width: 1200px) {
         margin-left: 250px;
     }
-}
 
-.read-more__title {
-    display: none;
-
-    @media screen and (min-width: 768px) {
-        display: block;
-        width: 160px;
-        height: 85px;
-        @include font-pars($weight: 400, $size: 12px, $lh: 14px, $ls: 0.04em);
-        margin-bottom: 5px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 200px;
-        height: 80px;
-        margin-bottom: 10px;
-        @include font-pars($weight: 400, $size: 14px, $lh: 17px, $ls: 0.04em);
-
+    &__title {
+        display: none;
+    
+        @media screen and (min-width: 768px) {
+            display: block;
+            width: 160px;
+            height: 85px;
+            @include font-pars($weight: 400, $size: 12px, $lh: 14px, $ls: 0.04em);
+            margin-bottom: 5px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 200px;
+            height: 80px;
+            margin-bottom: 10px;
+            @include font-pars($weight: 400, $size: 14px, $lh: 17px, $ls: 0.04em);
+    
+        }
     }
 }
 
@@ -265,17 +260,18 @@
     user-select: none;
     background-color: transparent;
     cursor: pointer;
-}
 
-.more-btn__icon {
-    fill: var(--primary-text-color);
-
-    &:hover {
-        fill: var(--hover-color);
-    }
-
-    &:focus {
-        fill: var(--yellow-color);
+    &__icon {
+        fill: var(--primary-text-color);
+        transition: fill .25s cubic-bezier(.4, 0, .2, 1);
+    
+        &:hover {
+            fill: var(--hover-color);
+        }
+    
+        &:focus {
+            fill: var(--yellow-color);
+        }
     }
 }
 
