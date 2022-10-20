@@ -10,7 +10,9 @@
     background-color: var(--primary-bg-color);
     transform: translateX(150%);
     transition: transform var(--anim-slow);
-    z-index: 200;
+
+    z-index: 1000;
+
 
 
     &.is-open {

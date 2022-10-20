@@ -1,10 +1,10 @@
 // Read-more
 // Modal
 .modal__div {
-    z-index: 310;
+    z-index: 1500;
     opacity: 0;
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     background: var(--primary-text-color);
     border: 2px solid var(--yellow-color);
     border-radius: 10px;

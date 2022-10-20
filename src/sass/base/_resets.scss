@@ -23,9 +23,16 @@ ul {
 a {
     text-decoration: none;
     color: currentColor;
+}
+
+
+
+a:hover,
+a:focus {
     cursor: url(../images/Cursor.png), pointer;
 }
 
-button {
+button:hover,
+button:focus {
     cursor: url(../images/Cursor.png), pointer;
 }

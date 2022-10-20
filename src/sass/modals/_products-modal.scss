@@ -2,12 +2,11 @@
   opacity: 0;
   visibility: hidden;
   padding: 28px 20px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 310;
-  opacity: 1;
 
   max-width: 450px;
   width: 100%;
@@ -18,7 +17,6 @@
   border: 2px solid var(--yellow-color);
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    height: 100vh;
     padding: 32px 40px;
   }
 
@@ -109,7 +107,7 @@
   @media screen and (min-width: 768px) {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -43%);
+    transform: translate(-50%);
   }
 }
 
