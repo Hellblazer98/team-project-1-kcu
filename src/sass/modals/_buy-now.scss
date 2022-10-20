@@ -13,24 +13,10 @@
 }
 
 .buy-now__modal {
-  opacity: 0;
-  visibility: hidden;
-  padding: 28px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 310;
-  opacity: 1;
   overflow: scroll;
-
   max-width: 450px;
   width: 100%;
   height: 100vh;
-
-  background: var(--primary-text-color);
-  border-radius: 10px;
-  border: 2px solid var(--yellow-color);
 
   @media screen and (min-width: 768px) {
     max-width: 568px;
