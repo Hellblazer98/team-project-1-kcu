@@ -25,7 +25,6 @@
   padding: 28px;
   max-width: 450px;
 
-
   background: var(--primary-text-color);
   border-radius: 10px;
   border: 2px solid var(--yellow-color);
@@ -91,10 +90,9 @@
 .buy-now__card-set {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 .buy-now__list {
@@ -120,7 +118,6 @@
 
   width: 132px;
   min-height: 198px;
-
 
   &:last-child {
     margin-bottom: 0px;
