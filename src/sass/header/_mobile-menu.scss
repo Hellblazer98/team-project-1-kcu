@@ -9,11 +9,8 @@
     padding: 20px 32px;
     background-color: var(--primary-bg-color);
     transform: translateX(150%);
-    transition: transform var(--anim-slow);
-
+    transition: transform .5s cubic-bezier(.4, 0, .2, 1);
     z-index: 1000;
-
-
 
     &.is-open {
         transform: translateX(0);
@@ -46,7 +43,7 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    transition: fill .25s cubic-bezier(.4, 0, .2, 1);
+    transition: fill .5s cubic-bezier(.4, 0, .2, 1);
 
     &:hover,
     :focus {
