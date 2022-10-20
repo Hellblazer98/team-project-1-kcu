@@ -11,18 +11,30 @@
   visibility: hidden;
 }
 
-.buy-now__modal {
+.modal {
   opacity: 0;
   visibility: hidden;
-  padding: 28px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1500;
+}
 
+.buy-now__modal {
+  padding: 28px;
   max-width: 450px;
   width: 100%;
+
+
+  background: var(--primary-text-color);
+  border-radius: 10px;
+  border: 2px solid var(--yellow-color);
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    overflow: scroll;
+    height: 100%;
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 568px;
