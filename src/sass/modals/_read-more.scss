@@ -1,24 +1,17 @@
 // Read-more
 // Modal
 .modal__div {
-    z-index: 1500;
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
     background: var(--primary-text-color);
     border: 2px solid var(--yellow-color);
     border-radius: 10px;
     width: 280px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     padding: 28px;
-    
-        @media  (min-width: 768px) {
-            width: 568px;
-            padding: 32px 60px;
-        }
+
+    @media  (min-width: 768px) {
+        width: 568px;
+        padding: 32px 60px;
     }
+}
 
 
     // h3 text
