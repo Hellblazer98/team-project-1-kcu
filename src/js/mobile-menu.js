@@ -2,6 +2,10 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const anchorOneClose = document.querySelector('.anchor');
+  const anchorTwoClose = document.querySelector('.anchor-2');
+  const anchorThreeClose = document.querySelector('.anchor-3');
+  const btnModalClose = document.querySelector('.modal-close');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -17,6 +21,10 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  anchorOneClose.addEventListener('click', toggleMenu);
+  anchorTwoClose.addEventListener('click', toggleMenu);
+  anchorThreeClose.addEventListener('click', toggleMenu);
+  btnModalClose.addEventListener('click', toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
@@ -26,3 +34,4 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
