@@ -50,12 +50,15 @@ height: 64px;
 }
 
 &::placeholder {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.4;
-color: var(--secondary-text-color);
+  font-size: 12px;
+  line-height: calc(17 / 12);
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+
 }
 
 @media  (min-width: 768px) {
@@ -70,7 +73,6 @@ border-color: var(--primary-bg-color);
 }
 &:not(:placeholder-shown):required:invalid {
 border-color: #ff0000;
-}
 }
 
     background: rgba(248, 210, 78, 0.1);

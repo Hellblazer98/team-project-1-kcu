@@ -9,46 +9,28 @@
 @import './base/container';
 @import './base/resets';
 
-// utils
-@import './utils/common';
-@import './utils/vars';
-@import './utils/visually-hidden';
+
+// components styles
+@import './components/socials';
+@import './components/buy-now';
+@import './components/products-modal';
+@import './components/read-more';
+@import './components/locations-modal';
+@import './components/franchize-modal';
+@import './components/mobile-menu';
+
+// layouts style
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
 
 
-// header
-@import './header/header';
-@import './header/mobile-menu';
-
-// hero
-@import './hero/hero';
-
-// Products
-@import './products/products';
-
-// About
-@import './about/about';
-
-// Advantages
-@import './advantages/advantages';
-
-// Gallery
-@import './gallery/gallery';
-
-// Customer Reviews
-@import './customer-reviews/customer-reviews';
-
-// Contacts
-@import './contacts/contacts';
-
-// Footer
-@import './footer/footer';
-
-// modals
-@import './modals/buy-now';
-@import './modals/products-modal';
-@import './modals/read-more';
-@import './modals/locations-modal';
-@import './modals/franchize-modal';
 
 
 
