@@ -24,60 +24,24 @@
     </div>
     <!-- Forms -->
     <div class="franchise-modal__forms">
-      <form class="franchise-modal__form" autocomplete="on">
-        <!-- Name -->
-        <label for="name" class="franchise-modal__label">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="franchise-modal__input"
-          placeholder="Name"
-          required
-          minlength="3"
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="ім'я не може бути менше ніж 3 літери"
-        />
-        <!-- Phone -->
-        <label for="phone" class="franchise-modal__label">Phone</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          class="franchise-modal__input"
-          placeholder="Phone"
-          required
-          minlength="12"
-          maxlength="12"
-          pattern="(?=.*\d).*$"
-        />
-        <!-- Email -->
-        <label for="email" class="franchise-modal__label">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="franchise-modal__input"
-          placeholder="Email"
-          required
-          minlength="10"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        />
-        <!-- Comment -->
-        <label for="comment" class="franchise-modal__label">Comment</label>
-        <textarea
-          type="text"
-          id="comment"
-          name="Comment"
-          class="franchise-modal__input"
-          rows="3"
-          placeholder="Comment"
-        ></textarea>
-      </form>
+        <form class="franchise-modal__form" autocomplete="on">
+            <!-- Name -->
+            <label for="name" class="franchise-modal__label">Name</label>
+            <input type="text" id="name" name="name" class="franchise-modal__input" placeholder="Name" required minlength="3" pattern="[abc]">
+            <!-- Phone -->
+            <label for="phone" class="franchise-modal__label">Phone</label>
+            <input type="tel" id="phone" name="phone" class="franchise-modal__input" placeholder="Phone" required minlength="10">
+            <!-- Email -->
+            <label for="email" class="franchise-modal__label">Email</label>
+            <input type="email" id="email" name="email" class="franchise-modal__input" placeholder="Email" required minlength="10"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <!-- Comment -->
+            <label for="comment" class="franchise-modal__label">Comment</label>
+            <textarea type="text" id="comment" name="Comment" class="franchise-modal__input" rows="3" placeholder="Comment"></textarea>
+        </form>
     </div>
 
     <button type="button" class="franchise-modal_button" type="submit">
-      <a href="">Submit</a>
+      Submit
     </button>
   </div>
 </div>
