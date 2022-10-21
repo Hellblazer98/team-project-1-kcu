@@ -1,0 +1,102 @@
+.menu-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 32px;
+    background-color: var(--primary-bg-color);
+    transform: translateX(150%);
+    transition: transform .5s cubic-bezier(.4, 0, .2, 1);
+    z-index: 1000;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+
+}
+
+.logo__menu {
+    @media screen and (min-width: 768px) {
+        width: 48px;
+        height: 44px;
+    }
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    fill: var(--primary-text-color);
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: fill .5s cubic-bezier(.4, 0, .2, 1);
+
+    &:hover,
+    :focus {
+        fill: var(--secondary-text-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 32px;
+        right: 32px;
+    }
+}
+
+.mobile-menu {
+    margin-top: 48px;
+    margin-bottom: auto;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 70px;
+    }
+}
+
+.mobile-nav {
+    .link{
+        outline: none;
+        color: var(--primary-text-color);
+        transition: color .25s cubic-bezier(.4, 0, .2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--secondary-text-color);
+        }
+    }
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    @include font-pars($weight: 600, $size: 20px, $lh: 25px, $ls: 0.02em);
+    color: var(--primary-text-color);
+    
+    @media screen and (min-width: 480px) {
+        @include font-pars($weight: 700, $size: 48px, $lh: 59px, $ls: 0.02em);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    
+    }
+}
+
+.mob-btn {
+    margin: 0 auto 63px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

@@ -1,27 +1,29 @@
-<section class="container" id="franchise">
-    <!-- Franchise modal -->
-    <div class="modal__div visually-hidden" data-modal>
-        <!-- Button close -->
-        <button type="button" class="modal-button" data-modal-close>
-            <!-- Svg -->
-        <svg width="9px" height="9px" class="read-more__svg">
-            <use href="./images/sprite.svg#crest"></use>
-        </svg>
-        </button>
-    <!-- h2 -->
-    <h2 class="modal__h2">Thank you for your interest in owning an Ice Cream shop</h2>
+<!-- Franchise modal -->
+<div class="modal__div modal" data-modal="5">
+  <!-- Button close -->
+  <button class="buy-now__btn js-modal-close" type="button">
+    <svg class="buy-now__btn-icon">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal__h3 franchise__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
+  <!-- h2 -->
+  <div class="franchise__wrap">
     <!-- Text -->
     <div class="modal__p">
-        <p>
-        Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. 
-        Once the application process resumes, we will contact you for further information. 
-        Please fill out the contact information below and we will reach out for additional information. 
-        We appreciate your patience.
-        </p>
+      <p>
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
     </div>
     <!-- Forms -->
     <div class="franchise-modal__forms">
-<<<<<<< Updated upstream
         <form class="franchise-modal__form" autocomplete="on">
             <!-- Name -->
             <label for="name" class="franchise-modal__label">Name</label>
@@ -36,67 +38,11 @@
             <label for="comment" class="franchise-modal__label">Comment</label>
             <textarea type="text" id="comment" name="Comment" class="franchise-modal__input" rows="3" placeholder="Comment"></textarea>
         </form>
-=======
-      <form class="franchise-modal__form" autocomplete="on">
-        <!-- Name -->
-        <label for="name" class="franchise-modal__label">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="franchise-modal__input"
-          placeholder="Name"
-          autofocus
-          required
-          minlength="3"
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="ім'я не може бути менше ніж 3 літери"
-        />
-        <!-- Phone -->
-        <label for="phone" class="franchise-modal__label">Phone</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          class="franchise-modal__input"
-          placeholder="Phone"
-          required
-          minlength="12"
-          maxlength="12"
-          pattern="(?=.*\d).*$"
-          title="телефон не може бути менше ніж 10 символів"
-
-        />
-        <!-- Email -->
-        <label for="email" class="franchise-modal__label">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="franchise-modal__input"
-          placeholder="Email"
-          required
-          minlength="10"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-        />
-        <!-- Comment -->
-        <label for="comment" class="franchise-modal__label">Comment</label>
-        <textarea
-          type="text"
-          id="comment"
-          name="Comment"
-          class="franchise-modal__input"
-          rows="3"
-          placeholder="Comment"
-        ></textarea>
-      </form>
->>>>>>> Stashed changes
     </div>
-    <!-- button submit -->
-        <div class="franchise-modal_button--div">
-        <button type="button" class="franchise-modal_button">
-        <a href="">Submit</a>
+
+    <button type="button" class="franchise-modal_button" type="submit">
+      Submit
     </button>
-        </div>
-    </div> 
-</section>
+  </div>
+</div>
+<div class="backdrop js-overlay-modal"></div>

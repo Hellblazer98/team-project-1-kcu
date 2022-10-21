@@ -1,0 +1,311 @@
+.hero {
+    .container {
+        position: relative;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    background-color: var(--primary-bg-color);
+    background-image: url(../images/hero/hero-bg-mobile.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/hero/hero-bg-tablet.svg);
+        padding-top: 70px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/hero/hero-bg-desktop.svg);
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+
+    &__title {
+        width: 247px;
+        height: 97px;
+        margin-bottom: 32px;
+        font-family: 'Seymour One';
+        @include font-pars($weight: 400, $size: 26px, $lh: 33px, $ls: 0.04em);
+        text-transform: uppercase;
+        color: var(--main-txt-cl);
+
+        @media screen and (min-width: 768px) {
+            width: 181px;
+            height: 74px;
+            margin-bottom: 21px;
+            @include font-pars($weight: 400, $size: 18px, $lh: 23px, $ls: 0.04em);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 367px;
+            height: 144px;
+            margin-bottom: 28px;
+            @include font-pars($weight: 400, $size: 38px, $lh: 48px, $ls: 0.04em);
+        }
+    }
+}
+
+.top-hero {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: 56px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.hero__list {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: start;
+
+    @media screen and (min-width: 1200px) {
+        gap: 34px;
+    }
+}
+
+.hero__products {
+    display: flex;
+    width: 62px;
+    min-height: 24px;
+    border: 2px solid #F8D24E;
+    border-radius: 8px; 
+    @include font-pars($weight: 600, $size: 8px, $lh: 10px, $ls: 0.04em);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+    outline: none;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
+
+    &:hover {
+        border-color: var(--hover-color);
+    }
+    
+    &:focus {
+        border-color: var(--hover-color);
+        color: var(--primary-text-color);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 132px;
+        min-height: 42px;
+        @include font-pars($weight: 600, $size: 14px, $lh: 18px, $ls: 0.04em);
+    }
+}
+
+.hero__how {
+    display: flex;
+    @include font-pars($weight: 600, $size: 8px, $lh: 10px, $ls: 0.04em);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+    text-decoration-line: underline;
+    outline: none;
+    color: var(--yellow-color);
+    cursor: pointer;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1);
+    
+    &:hover {
+        color: var(--hover-color);
+    }
+    
+    &:focus {
+        color: var(--primary-text-color);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include font-pars($weight: 600, $size: 14px, $lh: 17px, $ls: 0.04em);
+    }
+}
+
+.top-hero__right-side {
+    text-align: end;
+}
+
+.amount {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        @include font-pars($weight: 900, $size: 28px, $lh: 34px, $ls: 0.04em);
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+        color: var(--secondary-text-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font-pars($weight: 900, $size: 46px, $lh: 56px, $ls: 0.04em);
+    }
+}
+
+.text {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        @include font-pars($weight: 400, $size: 8px, $lh: 10px, $ls: 0.04em);
+        text-align: right;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font-pars($weight: 400, $size: 14px, $lh: 17px, $ls: 0.04em);
+        text-align: right;
+    }
+
+    &:not(:last-child) {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.down-hero {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.many-ice-cream {
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        left: 32px;
+        top: 160px;
+        z-index: 100;
+        
+        animation-name: spin;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 16px;
+        top: 255px;
+    }
+}
+
+.read-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 185px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 250px;
+    }
+
+    &__title {
+        display: none;
+    
+        @media screen and (min-width: 768px) {
+            display: block;
+            width: 160px;
+            height: 85px;
+            @include font-pars($weight: 400, $size: 12px, $lh: 14px, $ls: 0.04em);
+            margin-bottom: 5px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 200px;
+            height: 80px;
+            margin-bottom: 10px;
+            @include font-pars($weight: 400, $size: 14px, $lh: 17px, $ls: 0.04em);
+    
+        }
+    }
+}
+
+.more-btn {
+    display: flex;
+    margin-right: auto;
+    padding: 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &__icon {
+        fill: var(--primary-text-color);
+        transition: fill .25s cubic-bezier(.4, 0, .2, 1);
+    
+        &:hover {
+            fill: var(--hover-color);
+        }
+    
+        &:focus {
+            fill: var(--yellow-color);
+        }
+    }
+}
+
+.hero__image {
+    position: absolute;
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        bottom: -45px;
+        right: 50px;
+    }
+
+    @media screen and (min-width: 480px) {
+        bottom: -45px;
+        right: 130px;
+        z-index: 100;
+    }
+
+    @media screen and (min-width: 768px) {
+        bottom: -65px;
+        right: 50px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        bottom: -190px;
+        right: 20px;
+    }
+}

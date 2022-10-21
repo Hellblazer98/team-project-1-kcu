@@ -1,0 +1,130 @@
+<div class="products-modal__modal modal" data-modal="2">
+  <button class="products-modal__btn js-modal-close" type="button">
+    <svg class="products-modal__btn-icon">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <p class="products-modal__title">Chololate icecream</p>
+  <div class="products-modal__wrap">
+    <div class="products-modal__image">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/modalka/modalka-ingredients_desk@1x.jpg 1x,
+            images/modalka/modalka-ingredients_desk@2x.jpg   2x
+          "
+        />
+        <source
+          media="(min-width: 480px)"
+          srcset="
+            ./images/modalka/modalka-ingredients_mob@1x.jpg 1x,
+            images/modalka/modalka-ingredients_mob@2x.jpg   2x
+          "
+        />
+
+        <img
+          class="products-modal__img img"
+          src="./images/modalka/modalka-ingredients_mob@1x.jpg"
+          alt="Дві кульки шоколадного морозива у вафельному ріжку"
+        />
+      </picture>
+    </div>
+    <div class="products-modal__box">
+      <ul class="products-modal__list list">
+        <li class="products-modal__item">
+          <p class="products-modal__text-numbers">320</p>
+          <p class="products-modal__text">kcal</p>
+        </li>
+        <li class="products-modal__item">
+          <p class="products-modal__text-numbers">4g</p>
+          <p class="products-modal__text">Prote...</p>
+        </li>
+        <li class="products-modal__item">
+          <p class="products-modal__text-numbers">8,2g</p>
+          <p class="products-modal__text">Fats</p>
+        </li>
+        <li class="products-modal__item">
+          <p class="products-modal__text-numbers">40,4g</p>
+          <p class="products-modal__text">Carbs</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="products-modal__title-ingredients">Ingredients</h3>
+  <div class="products-modal__ingredients-box">
+    <ul class="products-modal__ingredients-list list">
+      <li class="products-modal__ingredients-item">
+        <span class="products-modal__ingredients-name">Milk</span>
+        <span>100ml</span>
+      </li>
+      <li class="products-modal__ingredients-item">
+        <span class="products-modal__ingredients-name">Belgian chocolate</span>
+        <span>20g</span>
+      </li>
+      <li class="products-modal__ingredients-item">
+        <span class="products-modal__ingredients-name">Cream</span>
+        <span>150 ml</span>
+      </li>
+      <li class="products-modal__ingredients-item">
+        <span class="products-modal__ingredients-name">Cocoa powder</span>
+        <span> 30g</span>
+      </li>
+      <li class="products-modal__ingredients-item">
+        <span class="products-modal__ingredients-name">Sugar</span>
+        <span>40g</span>
+      </li>
+      <li class="products-modal__ingredients-item">
+        <span class="products-modal__ingredients-name">Vanilla sugar</span>
+        <span>10g</span>
+      </li>
+    </ul>
+  </div>
+
+  <form class="form-order">
+    <div class="form-order__group group-products" role="group">
+      <label class="form-order__field">
+        <span class="form-order__label"></span>
+        <input
+          class="form-order__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          autofocus
+          required
+          minlength="3"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="ім'я не може бути менше ніж 3 літери"
+        />
+      </label>
+      <label class="form-order__field field-products">
+        <span class="form-order__label"></span>
+        <input
+          class="form-order__input"
+          type="tel"
+          name="tel"
+          placeholder="Phone"
+          required
+          minlength="12"
+          maxlength="12"
+          pattern="(?=.*\d).*$"
+          title="телефон не може бути менше ніж 10 символів"
+        />
+        />
+      </label>
+      <label class="form-order__comment">
+        <span class="form-order__label"></span>
+        <textarea
+          class="form-order__textarea"
+          name="Comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+    </div>
+    <button class="form-order__btn" type="submit">Submit</button>
+  </form>
+</div>
+
+<div class="backdrop js-overlay-modal"></div>

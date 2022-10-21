@@ -1,0 +1,155 @@
+<div class="buy-now__modal modal__div modal" data-modal="1">
+  <button class="buy-now__btn js-modal-close" type="button">
+    <svg class="buy-now__btn-icon">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <p class="buy-now__title">Buy now</p>
+
+  <div class="buy-now__card-set">
+    <ul class="buy-now__list list">
+      <li class="buy-now__item">
+        <label>
+          <input
+            class="buy-now__checkbox visually-hidden"
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/modalka/buy-now_desk1@1x.jpg 1x,
+                images/modalka/buy-now_desk1@2x.jpg   2x
+              "
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="
+                ./images/modalka/buy-now_mob1@1x.jpg 1x,
+                images/modalka/buy-now_mob1@2x.jpg   2x
+              "
+            />
+            <img
+              class="buy-now__img img"
+              src="./images/modalka/buy-now_mob1@1x.jpg"
+              alt="чотири вафельних ріжки з різними кульками морозова"
+            />
+          </picture>
+
+          <span class="buy-now__card-name ice-cream">ice cream</span>
+        </label>
+      </li>
+
+      <li class="buy-now__item">
+        <label>
+          <input
+            class="buy-now__checkbox visually-hidden"
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/modalka/buy-now_desk2@1x.jpg 1x,
+                images/modalka/buy-now_desk2@2x.jpg   2x
+              "
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="
+                ./images/modalka/buy-now_mob2@1x.jpg 1x,
+                images/modalka/buy-now_mob2@2x.jpg   2x
+              "
+            />
+            <img
+              class="buy-now__img img"
+              src="./images/modalka/buy-now_mob2@1x.jpg"
+              alt="склянка кави з морозивом та кубиками льоду"
+            />
+          </picture>
+          <span class="buy-now__card-name ice-coffee">ice coffee</span>
+        </label>
+      </li>
+      <li class="buy-now__item">
+        <label>
+          <input
+            class="buy-now__checkbox visually-hidden"
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/modalka/buy-now_desk3@1x.jpg 1x,
+                images/modalka/buy-now_desk3@2x.jpg   2x
+              "
+            />
+            <source
+              media="(min-width: 480px)"
+              srcset="
+                ./images/modalka/buy-now_mob3@1x.jpg 1x,
+                images/modalka/buy-now_mob3@2x.jpg   2x
+              "
+            />
+            <img
+              class="buy-now__img img"
+              src="./images/modalka/buy-now_mob3@1x.jpg"
+              alt="молочний коктель з взбитими вершками та печевом"
+            />
+          </picture>
+          <span class="buy-now__card-name milkshake">milkshake</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+
+  <form class="form-order">
+    <div class="form-order__group" role="group">
+      <label class="form-order__field">
+        <span class="form-order__label"></span>
+        <input
+          class="form-order__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          autofocus
+          required
+          minlength="3"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="ім'я не може бути менше ніж 3 літери"
+        />
+      </label>
+      <label class="form-order__field">
+        <span class="form-order__label"></span>
+        <input
+          class="form-order__input"
+          type="tel"
+          name="tel"
+          placeholder="Phone"
+          required
+          minlength="12"
+          maxlength="12"
+          pattern="(?=.*\d).*$"
+          title="телефон не може бути менше ніж 10 символів"
+        />
+      </label>
+      <label class="form-order__comment">
+        <span class="form-order__label"></span>
+        <textarea
+          class="form-order__textarea"
+          name="Comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+    </div>
+    <button class="form-order__btn" type="submit">Submit</button>
+  </form>
+</div>
+<div class="backdrop js-overlay-modal"></div>

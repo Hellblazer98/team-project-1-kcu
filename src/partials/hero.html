@@ -1,0 +1,77 @@
+<section class="hero">
+  <div class="container hero__container">
+    <div class="top-hero">
+      <div class="top-hero__left-side" data-aos="zoom-in">
+        <h1 class="hero__title">ice cream made with passion</h1>
+        <ul class="hero__list">
+          <li class="hero__item">
+            <a class="hero__products" href="#products">Products</a>
+          </li>
+          <li class="hero__item">
+            <a class="hero__how" href="#how">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <div class="top-hero__right-side" data-aos="zoom-in">
+        <ul class="list">
+          <li class="amount">16</li>
+          <li class="text">cafes</li>
+          <li class="amount">23</li>
+          <li class="text">food trucks</li>
+        </ul>
+      </div>
+    </div>
+    <div class="down-hero">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/many-ice-cream_lg-@1x.png 1x,
+            ./images/hero/many-ice-cream_lg-@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/many-ice-cream_md-@1x.png 1x,
+            ./images/hero/many-ice-cream_md-@2x.png 2x
+          "
+        />
+        <img
+          class="many-ice-cream"
+          src="./images/hero/many-ice-cream_md-@1x.png"
+          alt="many ice-cream"
+        />
+      </picture>
+
+      <div class="read-more">
+        <p class="read-more__title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button class="more-btn js-open-modal" type="button" data-modal="3">
+          <svg class="more-btn__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero__image" data-aos="zoom-in">
+      <img
+        class="hero__img"
+        srcset="
+          ./images/hero/ice-cream_sm-@1x.png 170w,
+          ./images/hero/ice-cream_sm-@2x.png 340w,
+          ./images/hero/ice-cream_md-@1x.png 270w,
+          ./images/hero/ice-cream_md-@2x.png 540w,
+          ./images/hero/ice-cream_lg-@1x.png 484w,
+          ./images/hero/ice-cream_lg-@2x.png 968w
+        "
+        sizes="(min-width: 1200px) 484px, (min-width: 768px) 270px, (min-width: 320px) 170px, 100vw"
+        src="./images/hero/ice-cream_sm-@1x.png"
+        alt="Ice Cream"
+      />
+    </div>
+  </div>
+</section>

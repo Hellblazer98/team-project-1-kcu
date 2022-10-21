@@ -1,0 +1,139 @@
+.header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 150;
+
+    &__container {
+        padding-top: 12px;
+        padding-bottom: 6px;
+        display: flex;
+        align-items: center;
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 20px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 8px;
+        }
+    }
+}
+
+
+
+.logo__icon {
+    @media screen and (min-width: 768px) {
+        width: 48px;
+        height: 44px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+        height: 65px;
+    }
+}
+
+.nav {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-top: 25px;
+        margin-left: 270px;
+        margin-right: auto;
+    }
+
+    &__list {
+        display: flex;
+        gap: 27px;
+        align-items: center;
+    }
+
+    &__item {
+        .link {
+            @include font-pars($weight: 700, $size: 16px, $lh: 20px, $ls: 0.04em);
+            font-style: normal;
+            transition: color .25s cubic-bezier(.4, 0, .2, 1);
+
+            &:hover,
+            &:focus {
+                color: var(--yellow-color);
+            }
+        }
+        
+    }
+}
+
+
+.header__btn-group {
+    display: flex;
+    margin-left: auto;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
+}
+
+.btn-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.buy-btn {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0;
+    font-family: inherit;
+    @include font-pars($weight: 600, $size: 14px, $lh: 17px, $ls: 0.04em);
+    user-select: none;
+    width: 152px;
+    height: 42px;
+    background: var(--yellow-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
+    
+
+    &:hover {
+        background-color: var(--hover-color);
+    }
+
+    &:focus {
+        background-color: var(--hover-color);
+        color: var(--primary-text-color);
+    }
+}
+
+.header__btn {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.buy-btn__icon {
+    display: flex;
+    stroke: currentColor;
+    fill: none;
+}

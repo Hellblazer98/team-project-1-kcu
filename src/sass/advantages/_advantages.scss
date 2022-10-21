@@ -1,0 +1,194 @@
+.section__advantages {
+  padding-top: 0;
+  padding-bottom: 60px;
+  background-color: var(--primary-bg-color);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 204px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 180px;
+  }
+}
+
+.list__advantages {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 80;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32;
+  }
+}
+
+.advantages__number {
+  margin-bottom: 18px;
+  padding-top: 25px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42px / 36px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(59px / 48px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: calc(71px / 58px);
+  }
+}
+
+.advantages__number::before {
+  display: block;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -18px;
+  left: 39%;
+
+  @media screen and (min-width: 768px) {
+    left: 33%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 42%;
+  }
+}
+
+.advantages__cow::before {
+  content: '';
+  background: (url('../images/advantages/img_1-@1x.png'), var(--yellow-color));
+  background: (
+    -webkit-image-set(url('../images/advantages/img_1-@1x.webp') 1x),
+    var(--yellow-color)
+  );
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: (
+      url('../images/advantages/img_1-@2x.png'),
+      var(--yellow-color)
+    );
+    background: (
+      -webkit-image-set(url('../images/advantages/img_1-@2x.webp') 2x),
+      var(--yellow-color)
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__weight::before {
+  content: '';
+  background: (url('../images/advantages/img_2-@1x.png'), var(--yellow-color));
+  background: (
+    -webkit-image-set(url('../images/advantages/img_2-@1x.webp') 1x),
+    var(--yellow-color)
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: (
+      url('../images/advantages/img_2-@2x.png'),
+      var(--yellow-color)
+    );
+    background: (
+      -webkit-image-set(url('../images/advantages/img_2-@2x.webp') 2x),
+      var(--yellow-color)
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__icecream::before {
+  content: '';
+  background: (url('../images/advantages/img_3-@1x.png'), var(--yellow-color));
+  background: (
+    -webkit-image-set(url('../images/advantages/img_3-@1x.webp') 1x),
+    var(--yellow-color)
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: (
+      url('../images/advantages/img_3-@2x.png'),
+      var(--yellow-color)
+    );
+    background: (
+      -webkit-image-set(url('../images/advantages/img_3-@2x.webp') 2x),
+      var(--yellow-color)
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__desc {
+  font-size: 12px;
+  line-height: calc(20px / 12px);
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24px / 14px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(28px / 16px);
+    letter-spacing: 0.02em;
+  }
+}
+
+.advantages__item {
+  margin: 0 auto;
+  width: 230px;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+  }
+}
+
+.advantages__item:not(last-child) {
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
