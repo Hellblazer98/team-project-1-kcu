@@ -71,20 +71,23 @@
     }
 }
 
-.hero__bnt-group {
+.hero__list {
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: start;
+
+    @media screen and (min-width: 1200px) {
+        gap: 34px;
+    }
 }
 
-.poducts-btn {
+.hero__products {
     display: flex;
     width: 62px;
     min-height: 24px;
     border: 2px solid #F8D24E;
-    border-radius: 8px;
-    font-family: inherit;
+    border-radius: 8px; 
     @include font-pars($weight: 600, $size: 8px, $lh: 10px, $ls: 0.04em);
     justify-content: center;
     align-items: center;
@@ -92,35 +95,27 @@
     user-select: none;
     outline: none;
     color: var(--secondary-text-color);
-    background-color: transparent;
     cursor: pointer;
     transition: color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
 
     &:hover {
         border-color: var(--hover-color);
     }
-
+    
     &:focus {
         border-color: var(--hover-color);
         color: var(--primary-text-color);
     }
-
+    
     @media screen and (min-width: 1200px) {
         width: 132px;
         min-height: 42px;
         @include font-pars($weight: 600, $size: 14px, $lh: 18px, $ls: 0.04em);
     }
-
 }
 
-.link-not:focus {
-    outline: none;
-}
-
-.how-btn {
+.hero__how {
     display: flex;
-    border: none;
-    font-family: inherit;
     @include font-pars($weight: 600, $size: 8px, $lh: 10px, $ls: 0.04em);
     justify-content: center;
     align-items: center;
@@ -129,18 +124,17 @@
     text-decoration-line: underline;
     outline: none;
     color: var(--yellow-color);
-    background-color: transparent;
     cursor: pointer;
     transition: color .25s cubic-bezier(.4, 0, .2, 1);
-
+    
     &:hover {
         color: var(--hover-color);
     }
-
+    
     &:focus {
         color: var(--primary-text-color);
     }
-
+    
     @media screen and (min-width: 1200px) {
         @include font-pars($weight: 600, $size: 14px, $lh: 17px, $ls: 0.04em);
     }
@@ -207,7 +201,7 @@
         left: 32px;
         top: 160px;
         z-index: 100;
-
+        
         animation-name: spin;
         animation-duration: 10s;
         animation-timing-function: linear;
