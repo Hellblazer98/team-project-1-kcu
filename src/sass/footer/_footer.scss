@@ -125,3 +125,20 @@
     @include font-pars(700, 12px, 22px, 0.02em);
   }
 }
+
+.chevronup__container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+}
+.chevronup__link {
+  padding: 10px 12px;
+  background: var(--yellow-color);
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.fa-chevron-up {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
