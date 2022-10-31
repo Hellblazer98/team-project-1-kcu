@@ -15,7 +15,7 @@
 
 
 .gallery, .customers {
-    background-image: url(../images/backgrounds/secondary-bg-sm@1x.png);
+    background-image: url(../images/backgrounds/secondary-bg-sm@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,16 +24,16 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/backgrounds/secondary-bg-sm@2x.png);
+        background-image: url(../images/backgrounds/secondary-bg-sm@2x.jpg);
     }
 
 
     @media screen and (min-width: 768px) {
-        background-image: url(../images/backgrounds/secondary-bg-md@1x.png);
+        background-image: url(../images/backgrounds/secondary-bg-md@1x.jpg);
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: url(../images/backgrounds/secondary-bg-lg@1x.png);
+        background-image: url(../images/backgrounds/secondary-bg-lg@1x.jpg);
     }
 }
 
@@ -56,7 +56,7 @@
 }
 
 .slider__content {
-    width: 100%;
+    width: 320px;
     background-color:var(--primary-bg-color);
     border-radius: 10px;
     padding: 34px 29px;
@@ -64,6 +64,7 @@
 
 
     @media screen and (min-width: 768px) {
+        width: 320px;
         border-radius: 24px;
         padding: 28px 80px;
         margin-bottom: 32px;
