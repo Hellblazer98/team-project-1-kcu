@@ -189,7 +189,7 @@ background-image: linear-gradient(#00000000 25%, #84a178 25%);
 
 .contacts__button {
   @include font-pars($weight: 600, $size: 14px, $lh: 18px, $ls: 0.04em);
-
+  color: var(--secondary-text-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -220,6 +220,7 @@ background-image: linear-gradient(#00000000 25%, #84a178 25%);
 }
 
 .contacts__button-franchise {
+  color: var(--secondary-text-color);
   background-color: transparent;
   border: 2px solid var(--yellow-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
