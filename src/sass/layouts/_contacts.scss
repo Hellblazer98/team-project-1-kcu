@@ -1,29 +1,4 @@
 // section
-.contacts {
-  background-image: url(/src/images/backgrounds/secondary-bg-sm@1x.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-
-  @media screen and (min-width: 768px) {
-    background-image: url(/src/images/backgrounds/secondary-bg-md@1x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: url(/src/images/backgrounds/secondary-bg-lg@1x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-}
-
 .contacts__container {
 background-image: linear-gradient(#00000000 25%, #84a178 25%);
 }
