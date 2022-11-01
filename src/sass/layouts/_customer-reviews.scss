@@ -29,6 +29,31 @@
 
     @media screen and (min-width: 768px) {
         background-image: url(../images/backgrounds/secondary-bg-md@1x.jpg);
+        background-attachment: fixed;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/backgrounds/secondary-bg-lg@1x.jpg);
+        background-attachment: fixed;
+    }
+}
+
+.gallery, .contacts {
+    background-image: url(../images/backgrounds/secondary-bg-sm@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/backgrounds/secondary-bg-sm@2x.jpg);
+    }
+
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/backgrounds/secondary-bg-md@1x.jpg);
     }
 
     @media screen and (min-width: 1200px) {
